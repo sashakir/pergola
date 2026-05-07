@@ -1,0 +1,31 @@
+newmtl warm_wood
+Kd 0.58 0.31 0.15
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08
+
+newmtl end_grain_dark
+Kd 0.32 0.17 0.08
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08
+
+newmtl clear_polycarbonate
+Kd 0.65 0.9 1
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08
+d 0.35
+illum 2
+
+newmtl concrete_slab
+Kd 0.72 0.7 0.66
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08
+
+newmtl terrace_deck
+Kd 0.74 0.56 0.3
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08
+
+newmtl galvanized_metal
+Kd 0.55 0.57 0.58
+Ka 0.1 0.1 0.1
+Ks 0.08 0.08 0.08

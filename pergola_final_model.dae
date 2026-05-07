@@ -1,0 +1,2354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Assimp</author>
+      <authoring_tool>Assimp Exporter</authoring_tool>
+    </contributor>
+    <created>2026-05-07T02:31:34</created>
+    <modified>2026-05-07T02:31:34</modified>
+    <unit name="meter" meter="1" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+  </library_images>
+  <library_effects>
+    <effect id="DefaultMaterial-fx" name="DefaultMaterial">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0   0   0   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.600000024   0.600000024   0.600000024   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0   0   0   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="warm_wood-fx" name="warm_wood">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.579999983   0.310000002   0.150000006   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="end_grain_dark-fx" name="end_grain_dark">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.319999993   0.170000002   0.0799999982   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="clear_polycarbonate-fx" name="clear_polycarbonate">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.649999976   0.899999976   1   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.349999994</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="concrete_slab-fx" name="concrete_slab">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.720000029   0.699999988   0.660000026   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="terrace_deck-fx" name="terrace_deck">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.74000001   0.560000002   0.300000012   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="galvanized_metal-fx" name="galvanized_metal">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0   0   0   1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.100000001   0.100000001   0.100000001   1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.550000012   0.569999993   0.579999983   1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.0799999982   0.0799999982   0.0799999982   1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0</float>
+            </shininess>
+            <transparent>
+              <color sid="transparent">1   1   1   1</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="DefaultMaterial" name="DefaultMaterial">
+      <instance_effect url="#DefaultMaterial-fx"/>
+    </material>
+    <material id="warm_wood" name="warm_wood">
+      <instance_effect url="#warm_wood-fx"/>
+    </material>
+    <material id="end_grain_dark" name="end_grain_dark">
+      <instance_effect url="#end_grain_dark-fx"/>
+    </material>
+    <material id="clear_polycarbonate" name="clear_polycarbonate">
+      <instance_effect url="#clear_polycarbonate-fx"/>
+    </material>
+    <material id="concrete_slab" name="concrete_slab">
+      <instance_effect url="#concrete_slab-fx"/>
+    </material>
+    <material id="terrace_deck" name="terrace_deck">
+      <instance_effect url="#terrace_deck-fx"/>
+    </material>
+    <material id="galvanized_metal" name="galvanized_metal">
+      <instance_effect url="#galvanized_metal-fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="concrete_slab_2500x6500_1" name="concrete_slab_2500x6500" >
+      <mesh>
+        <source id="concrete_slab_2500x6500_1-positions" name="concrete_slab_2500x6500_1-positions">
+          <float_array id="concrete_slab_2500x6500_1-positions-array" count="72"> -3.25 -0.189999998 -1.25 3.25 -0.189999998 -1.25 3.25 -0.0399999991 -1.25 -3.25 -0.0399999991 -1.25 -3.25 -0.189999998 1.25 -3.25 -0.0399999991 1.25 3.25 -0.0399999991 1.25 3.25 -0.189999998 1.25 -3.25 -0.189999998 -1.25 -3.25 -0.189999998 1.25 3.25 -0.189999998 1.25 3.25 -0.189999998 -1.25 3.25 -0.189999998 -1.25 3.25 -0.189999998 1.25 3.25 -0.0399999991 1.25 3.25 -0.0399999991 -1.25 3.25 -0.0399999991 -1.25 3.25 -0.0399999991 1.25 -3.25 -0.0399999991 1.25 -3.25 -0.0399999991 -1.25 -3.25 -0.0399999991 -1.25 -3.25 -0.0399999991 1.25 -3.25 -0.189999998 1.25 -3.25 -0.189999998 -1.25 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#concrete_slab_2500x6500_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="concrete_slab_2500x6500_1-vertices">
+          <input semantic="POSITION" source="#concrete_slab_2500x6500_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#concrete_slab_2500x6500_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="terrace_deck_surface_1" name="terrace_deck_surface" >
+      <mesh>
+        <source id="terrace_deck_surface_1-positions" name="terrace_deck_surface_1-positions">
+          <float_array id="terrace_deck_surface_1-positions-array" count="72"> -3.25 0 -1.25 3.25 0 -1.25 3.25 0.0399999991 -1.25 -3.25 0.0399999991 -1.25 -3.25 0 1.25 -3.25 0.0399999991 1.25 3.25 0.0399999991 1.25 3.25 0 1.25 -3.25 0 -1.25 -3.25 0 1.25 3.25 0 1.25 3.25 0 -1.25 3.25 0 -1.25 3.25 0 1.25 3.25 0.0399999991 1.25 3.25 0.0399999991 -1.25 3.25 0.0399999991 -1.25 3.25 0.0399999991 1.25 -3.25 0.0399999991 1.25 -3.25 0.0399999991 -1.25 -3.25 0.0399999991 -1.25 -3.25 0.0399999991 1.25 -3.25 0 1.25 -3.25 0 -1.25 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#terrace_deck_surface_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="terrace_deck_surface_1-vertices">
+          <input semantic="POSITION" source="#terrace_deck_surface_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#terrace_deck_surface_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_-3180_-1180_1" name="glulam_post_140x140_-3180_-1180" >
+      <mesh>
+        <source id="glulam_post_140x140_-3180_-1180_1-positions" name="glulam_post_140x140_-3180_-1180_1-positions">
+          <float_array id="glulam_post_140x140_-3180_-1180_1-positions-array" count="72"> -3.25 0 -1.25 -3.1099999 0 -1.25 -3.1099999 2.59439993 -1.25 -3.25 2.59439993 -1.25 -3.25 0 -1.11000001 -3.25 2.59439993 -1.11000001 -3.1099999 2.59439993 -1.11000001 -3.1099999 0 -1.11000001 -3.25 0 -1.25 -3.25 0 -1.11000001 -3.1099999 0 -1.11000001 -3.1099999 0 -1.25 -3.1099999 0 -1.25 -3.1099999 0 -1.11000001 -3.1099999 2.59439993 -1.11000001 -3.1099999 2.59439993 -1.25 -3.1099999 2.59439993 -1.25 -3.1099999 2.59439993 -1.11000001 -3.25 2.59439993 -1.11000001 -3.25 2.59439993 -1.25 -3.25 2.59439993 -1.25 -3.25 2.59439993 -1.11000001 -3.25 0 -1.11000001 -3.25 0 -1.25 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_-3180_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_-3180_-1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_-3180_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_-3180_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_-3180_-1180_1" name="metal_post_base_-3180_-1180" >
+      <mesh>
+        <source id="metal_post_base_-3180_-1180_1-positions" name="metal_post_base_-3180_-1180_1-positions">
+          <float_array id="metal_post_base_-3180_-1180_1-positions-array" count="72"> -3.2750001 0.0199999996 -1.27499998 -3.08500004 0.0199999996 -1.27499998 -3.08500004 0.0700000003 -1.27499998 -3.2750001 0.0700000003 -1.27499998 -3.2750001 0.0199999996 -1.08500004 -3.2750001 0.0700000003 -1.08500004 -3.08500004 0.0700000003 -1.08500004 -3.08500004 0.0199999996 -1.08500004 -3.2750001 0.0199999996 -1.27499998 -3.2750001 0.0199999996 -1.08500004 -3.08500004 0.0199999996 -1.08500004 -3.08500004 0.0199999996 -1.27499998 -3.08500004 0.0199999996 -1.27499998 -3.08500004 0.0199999996 -1.08500004 -3.08500004 0.0700000003 -1.08500004 -3.08500004 0.0700000003 -1.27499998 -3.08500004 0.0700000003 -1.27499998 -3.08500004 0.0700000003 -1.08500004 -3.2750001 0.0700000003 -1.08500004 -3.2750001 0.0700000003 -1.27499998 -3.2750001 0.0700000003 -1.27499998 -3.2750001 0.0700000003 -1.08500004 -3.2750001 0.0199999996 -1.08500004 -3.2750001 0.0199999996 -1.27499998 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_-3180_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_-3180_-1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_-3180_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_-3180_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_-3180_1180_1" name="glulam_post_140x140_-3180_1180" >
+      <mesh>
+        <source id="glulam_post_140x140_-3180_1180_1-positions" name="glulam_post_140x140_-3180_1180_1-positions">
+          <float_array id="glulam_post_140x140_-3180_1180_1-positions-array" count="72"> -3.25 0 1.11000001 -3.1099999 0 1.11000001 -3.1099999 2.40560007 1.11000001 -3.25 2.40560007 1.11000001 -3.25 0 1.25 -3.25 2.40560007 1.25 -3.1099999 2.40560007 1.25 -3.1099999 0 1.25 -3.25 0 1.11000001 -3.25 0 1.25 -3.1099999 0 1.25 -3.1099999 0 1.11000001 -3.1099999 0 1.11000001 -3.1099999 0 1.25 -3.1099999 2.40560007 1.25 -3.1099999 2.40560007 1.11000001 -3.1099999 2.40560007 1.11000001 -3.1099999 2.40560007 1.25 -3.25 2.40560007 1.25 -3.25 2.40560007 1.11000001 -3.25 2.40560007 1.11000001 -3.25 2.40560007 1.25 -3.25 0 1.25 -3.25 0 1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_-3180_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_-3180_1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_-3180_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_-3180_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_-3180_1180_1" name="metal_post_base_-3180_1180" >
+      <mesh>
+        <source id="metal_post_base_-3180_1180_1-positions" name="metal_post_base_-3180_1180_1-positions">
+          <float_array id="metal_post_base_-3180_1180_1-positions-array" count="72"> -3.2750001 0.0199999996 1.08500004 -3.08500004 0.0199999996 1.08500004 -3.08500004 0.0700000003 1.08500004 -3.2750001 0.0700000003 1.08500004 -3.2750001 0.0199999996 1.27499998 -3.2750001 0.0700000003 1.27499998 -3.08500004 0.0700000003 1.27499998 -3.08500004 0.0199999996 1.27499998 -3.2750001 0.0199999996 1.08500004 -3.2750001 0.0199999996 1.27499998 -3.08500004 0.0199999996 1.27499998 -3.08500004 0.0199999996 1.08500004 -3.08500004 0.0199999996 1.08500004 -3.08500004 0.0199999996 1.27499998 -3.08500004 0.0700000003 1.27499998 -3.08500004 0.0700000003 1.08500004 -3.08500004 0.0700000003 1.08500004 -3.08500004 0.0700000003 1.27499998 -3.2750001 0.0700000003 1.27499998 -3.2750001 0.0700000003 1.08500004 -3.2750001 0.0700000003 1.08500004 -3.2750001 0.0700000003 1.27499998 -3.2750001 0.0199999996 1.27499998 -3.2750001 0.0199999996 1.08500004 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_-3180_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_-3180_1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_-3180_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_-3180_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_-588_-1180_1" name="glulam_post_140x140_-588_-1180" >
+      <mesh>
+        <source id="glulam_post_140x140_-588_-1180_1-positions" name="glulam_post_140x140_-588_-1180_1-positions">
+          <float_array id="glulam_post_140x140_-588_-1180_1-positions-array" count="72"> -0.657999992 0 -1.25 -0.518000007 0 -1.25 -0.518000007 2.59439993 -1.25 -0.657999992 2.59439993 -1.25 -0.657999992 0 -1.11000001 -0.657999992 2.59439993 -1.11000001 -0.518000007 2.59439993 -1.11000001 -0.518000007 0 -1.11000001 -0.657999992 0 -1.25 -0.657999992 0 -1.11000001 -0.518000007 0 -1.11000001 -0.518000007 0 -1.25 -0.518000007 0 -1.25 -0.518000007 0 -1.11000001 -0.518000007 2.59439993 -1.11000001 -0.518000007 2.59439993 -1.25 -0.518000007 2.59439993 -1.25 -0.518000007 2.59439993 -1.11000001 -0.657999992 2.59439993 -1.11000001 -0.657999992 2.59439993 -1.25 -0.657999992 2.59439993 -1.25 -0.657999992 2.59439993 -1.11000001 -0.657999992 0 -1.11000001 -0.657999992 0 -1.25 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_-588_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_-588_-1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_-588_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_-588_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_-588_-1180_1" name="metal_post_base_-588_-1180" >
+      <mesh>
+        <source id="metal_post_base_-588_-1180_1-positions" name="metal_post_base_-588_-1180_1-positions">
+          <float_array id="metal_post_base_-588_-1180_1-positions-array" count="72"> -0.683000028 0.0199999996 -1.27499998 -0.493000001 0.0199999996 -1.27499998 -0.493000001 0.0700000003 -1.27499998 -0.683000028 0.0700000003 -1.27499998 -0.683000028 0.0199999996 -1.08500004 -0.683000028 0.0700000003 -1.08500004 -0.493000001 0.0700000003 -1.08500004 -0.493000001 0.0199999996 -1.08500004 -0.683000028 0.0199999996 -1.27499998 -0.683000028 0.0199999996 -1.08500004 -0.493000001 0.0199999996 -1.08500004 -0.493000001 0.0199999996 -1.27499998 -0.493000001 0.0199999996 -1.27499998 -0.493000001 0.0199999996 -1.08500004 -0.493000001 0.0700000003 -1.08500004 -0.493000001 0.0700000003 -1.27499998 -0.493000001 0.0700000003 -1.27499998 -0.493000001 0.0700000003 -1.08500004 -0.683000028 0.0700000003 -1.08500004 -0.683000028 0.0700000003 -1.27499998 -0.683000028 0.0700000003 -1.27499998 -0.683000028 0.0700000003 -1.08500004 -0.683000028 0.0199999996 -1.08500004 -0.683000028 0.0199999996 -1.27499998 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_-588_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_-588_-1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_-588_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_-588_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_-588_1180_1" name="glulam_post_140x140_-588_1180" >
+      <mesh>
+        <source id="glulam_post_140x140_-588_1180_1-positions" name="glulam_post_140x140_-588_1180_1-positions">
+          <float_array id="glulam_post_140x140_-588_1180_1-positions-array" count="72"> -0.657999992 0 1.11000001 -0.518000007 0 1.11000001 -0.518000007 2.40560007 1.11000001 -0.657999992 2.40560007 1.11000001 -0.657999992 0 1.25 -0.657999992 2.40560007 1.25 -0.518000007 2.40560007 1.25 -0.518000007 0 1.25 -0.657999992 0 1.11000001 -0.657999992 0 1.25 -0.518000007 0 1.25 -0.518000007 0 1.11000001 -0.518000007 0 1.11000001 -0.518000007 0 1.25 -0.518000007 2.40560007 1.25 -0.518000007 2.40560007 1.11000001 -0.518000007 2.40560007 1.11000001 -0.518000007 2.40560007 1.25 -0.657999992 2.40560007 1.25 -0.657999992 2.40560007 1.11000001 -0.657999992 2.40560007 1.11000001 -0.657999992 2.40560007 1.25 -0.657999992 0 1.25 -0.657999992 0 1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_-588_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_-588_1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_-588_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_-588_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_-588_1180_1" name="metal_post_base_-588_1180" >
+      <mesh>
+        <source id="metal_post_base_-588_1180_1-positions" name="metal_post_base_-588_1180_1-positions">
+          <float_array id="metal_post_base_-588_1180_1-positions-array" count="72"> -0.683000028 0.0199999996 1.08500004 -0.493000001 0.0199999996 1.08500004 -0.493000001 0.0700000003 1.08500004 -0.683000028 0.0700000003 1.08500004 -0.683000028 0.0199999996 1.27499998 -0.683000028 0.0700000003 1.27499998 -0.493000001 0.0700000003 1.27499998 -0.493000001 0.0199999996 1.27499998 -0.683000028 0.0199999996 1.08500004 -0.683000028 0.0199999996 1.27499998 -0.493000001 0.0199999996 1.27499998 -0.493000001 0.0199999996 1.08500004 -0.493000001 0.0199999996 1.08500004 -0.493000001 0.0199999996 1.27499998 -0.493000001 0.0700000003 1.27499998 -0.493000001 0.0700000003 1.08500004 -0.493000001 0.0700000003 1.08500004 -0.493000001 0.0700000003 1.27499998 -0.683000028 0.0700000003 1.27499998 -0.683000028 0.0700000003 1.08500004 -0.683000028 0.0700000003 1.08500004 -0.683000028 0.0700000003 1.27499998 -0.683000028 0.0199999996 1.27499998 -0.683000028 0.0199999996 1.08500004 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_-588_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_-588_1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_-588_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_-588_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_2004_-1180_1" name="glulam_post_140x140_2004_-1180" >
+      <mesh>
+        <source id="glulam_post_140x140_2004_-1180_1-positions" name="glulam_post_140x140_2004_-1180_1-positions">
+          <float_array id="glulam_post_140x140_2004_-1180_1-positions-array" count="72"> 1.93400002 0 -1.25 2.07399988 0 -1.25 2.07399988 2.59439993 -1.25 1.93400002 2.59439993 -1.25 1.93400002 0 -1.11000001 1.93400002 2.59439993 -1.11000001 2.07399988 2.59439993 -1.11000001 2.07399988 0 -1.11000001 1.93400002 0 -1.25 1.93400002 0 -1.11000001 2.07399988 0 -1.11000001 2.07399988 0 -1.25 2.07399988 0 -1.25 2.07399988 0 -1.11000001 2.07399988 2.59439993 -1.11000001 2.07399988 2.59439993 -1.25 2.07399988 2.59439993 -1.25 2.07399988 2.59439993 -1.11000001 1.93400002 2.59439993 -1.11000001 1.93400002 2.59439993 -1.25 1.93400002 2.59439993 -1.25 1.93400002 2.59439993 -1.11000001 1.93400002 0 -1.11000001 1.93400002 0 -1.25 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_2004_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_2004_-1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_2004_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_2004_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_2004_-1180_1" name="metal_post_base_2004_-1180" >
+      <mesh>
+        <source id="metal_post_base_2004_-1180_1-positions" name="metal_post_base_2004_-1180_1-positions">
+          <float_array id="metal_post_base_2004_-1180_1-positions-array" count="72"> 1.90899992 0.0199999996 -1.27499998 2.09899998 0.0199999996 -1.27499998 2.09899998 0.0700000003 -1.27499998 1.90899992 0.0700000003 -1.27499998 1.90899992 0.0199999996 -1.08500004 1.90899992 0.0700000003 -1.08500004 2.09899998 0.0700000003 -1.08500004 2.09899998 0.0199999996 -1.08500004 1.90899992 0.0199999996 -1.27499998 1.90899992 0.0199999996 -1.08500004 2.09899998 0.0199999996 -1.08500004 2.09899998 0.0199999996 -1.27499998 2.09899998 0.0199999996 -1.27499998 2.09899998 0.0199999996 -1.08500004 2.09899998 0.0700000003 -1.08500004 2.09899998 0.0700000003 -1.27499998 2.09899998 0.0700000003 -1.27499998 2.09899998 0.0700000003 -1.08500004 1.90899992 0.0700000003 -1.08500004 1.90899992 0.0700000003 -1.27499998 1.90899992 0.0700000003 -1.27499998 1.90899992 0.0700000003 -1.08500004 1.90899992 0.0199999996 -1.08500004 1.90899992 0.0199999996 -1.27499998 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_2004_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_2004_-1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_2004_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_2004_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="glulam_post_140x140_2004_1180_1" name="glulam_post_140x140_2004_1180" >
+      <mesh>
+        <source id="glulam_post_140x140_2004_1180_1-positions" name="glulam_post_140x140_2004_1180_1-positions">
+          <float_array id="glulam_post_140x140_2004_1180_1-positions-array" count="72"> 1.93400002 0 1.11000001 2.07399988 0 1.11000001 2.07399988 2.40560007 1.11000001 1.93400002 2.40560007 1.11000001 1.93400002 0 1.25 1.93400002 2.40560007 1.25 2.07399988 2.40560007 1.25 2.07399988 0 1.25 1.93400002 0 1.11000001 1.93400002 0 1.25 2.07399988 0 1.25 2.07399988 0 1.11000001 2.07399988 0 1.11000001 2.07399988 0 1.25 2.07399988 2.40560007 1.25 2.07399988 2.40560007 1.11000001 2.07399988 2.40560007 1.11000001 2.07399988 2.40560007 1.25 1.93400002 2.40560007 1.25 1.93400002 2.40560007 1.11000001 1.93400002 2.40560007 1.11000001 1.93400002 2.40560007 1.25 1.93400002 0 1.25 1.93400002 0 1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#glulam_post_140x140_2004_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="glulam_post_140x140_2004_1180_1-vertices">
+          <input semantic="POSITION" source="#glulam_post_140x140_2004_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#glulam_post_140x140_2004_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="metal_post_base_2004_1180_1" name="metal_post_base_2004_1180" >
+      <mesh>
+        <source id="metal_post_base_2004_1180_1-positions" name="metal_post_base_2004_1180_1-positions">
+          <float_array id="metal_post_base_2004_1180_1-positions-array" count="72"> 1.90899992 0.0199999996 1.08500004 2.09899998 0.0199999996 1.08500004 2.09899998 0.0700000003 1.08500004 1.90899992 0.0700000003 1.08500004 1.90899992 0.0199999996 1.27499998 1.90899992 0.0700000003 1.27499998 2.09899998 0.0700000003 1.27499998 2.09899998 0.0199999996 1.27499998 1.90899992 0.0199999996 1.08500004 1.90899992 0.0199999996 1.27499998 2.09899998 0.0199999996 1.27499998 2.09899998 0.0199999996 1.08500004 2.09899998 0.0199999996 1.08500004 2.09899998 0.0199999996 1.27499998 2.09899998 0.0700000003 1.27499998 2.09899998 0.0700000003 1.08500004 2.09899998 0.0700000003 1.08500004 2.09899998 0.0700000003 1.27499998 1.90899992 0.0700000003 1.27499998 1.90899992 0.0700000003 1.08500004 1.90899992 0.0700000003 1.08500004 1.90899992 0.0700000003 1.27499998 1.90899992 0.0199999996 1.27499998 1.90899992 0.0199999996 1.08500004 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#metal_post_base_2004_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="metal_post_base_2004_1180_1-vertices">
+          <input semantic="POSITION" source="#metal_post_base_2004_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#metal_post_base_2004_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="double_long_beam_outer_-1180_1" name="double_long_beam_outer_-1180" >
+      <mesh>
+        <source id="double_long_beam_outer_-1180_1-positions" name="double_long_beam_outer_-1180_1-positions">
+          <float_array id="double_long_beam_outer_-1180_1-positions-array" count="72"> -3.58800006 2.44989991 -1.20249999 2.41199994 2.44989991 -1.20249999 2.41199994 2.59490013 -1.20249999 -3.58800006 2.59490013 -1.20249999 -3.58800006 2.44989991 -1.15750003 -3.58800006 2.59490013 -1.15750003 2.41199994 2.59490013 -1.15750003 2.41199994 2.44989991 -1.15750003 -3.58800006 2.44989991 -1.20249999 -3.58800006 2.44989991 -1.15750003 2.41199994 2.44989991 -1.15750003 2.41199994 2.44989991 -1.20249999 2.41199994 2.44989991 -1.20249999 2.41199994 2.44989991 -1.15750003 2.41199994 2.59490013 -1.15750003 2.41199994 2.59490013 -1.20249999 2.41199994 2.59490013 -1.20249999 2.41199994 2.59490013 -1.15750003 -3.58800006 2.59490013 -1.15750003 -3.58800006 2.59490013 -1.20249999 -3.58800006 2.59490013 -1.20249999 -3.58800006 2.59490013 -1.15750003 -3.58800006 2.44989991 -1.15750003 -3.58800006 2.44989991 -1.20249999 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#double_long_beam_outer_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="double_long_beam_outer_-1180_1-vertices">
+          <input semantic="POSITION" source="#double_long_beam_outer_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#double_long_beam_outer_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="double_long_beam_outer_1180_1" name="double_long_beam_outer_1180" >
+      <mesh>
+        <source id="double_long_beam_outer_1180_1-positions" name="double_long_beam_outer_1180_1-positions">
+          <float_array id="double_long_beam_outer_1180_1-positions-array" count="72"> -3.58800006 2.26110005 1.15750003 2.41199994 2.26110005 1.15750003 2.41199994 2.40610003 1.15750003 -3.58800006 2.40610003 1.15750003 -3.58800006 2.26110005 1.20249999 -3.58800006 2.40610003 1.20249999 2.41199994 2.40610003 1.20249999 2.41199994 2.26110005 1.20249999 -3.58800006 2.26110005 1.15750003 -3.58800006 2.26110005 1.20249999 2.41199994 2.26110005 1.20249999 2.41199994 2.26110005 1.15750003 2.41199994 2.26110005 1.15750003 2.41199994 2.26110005 1.20249999 2.41199994 2.40610003 1.20249999 2.41199994 2.40610003 1.15750003 2.41199994 2.40610003 1.15750003 2.41199994 2.40610003 1.20249999 -3.58800006 2.40610003 1.20249999 -3.58800006 2.40610003 1.15750003 -3.58800006 2.40610003 1.15750003 -3.58800006 2.40610003 1.20249999 -3.58800006 2.26110005 1.20249999 -3.58800006 2.26110005 1.15750003 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#double_long_beam_outer_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="double_long_beam_outer_1180_1-vertices">
+          <input semantic="POSITION" source="#double_long_beam_outer_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#double_long_beam_outer_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_1_1" name="rafter_45x145_1" >
+      <mesh>
+        <source id="rafter_45x145_1_1-positions" name="rafter_45x145_1_1-positions">
+          <float_array id="rafter_45x145_1_1-positions-array" count="72"> -3.61049986 2.51800013 -1.39300001 -3.61049986 2.33730006 1.3836 -3.61049986 2.47259998 1.53769994 -3.61049986 2.67210007 -1.52830005 -3.56550002 2.51800013 -1.39300001 -3.56550002 2.67210007 -1.52830005 -3.56550002 2.47259998 1.53769994 -3.56550002 2.33730006 1.3836 -3.61049986 2.51800013 -1.39300001 -3.56550002 2.51800013 -1.39300001 -3.56550002 2.33730006 1.3836 -3.61049986 2.33730006 1.3836 -3.61049986 2.33730006 1.3836 -3.56550002 2.33730006 1.3836 -3.56550002 2.47259998 1.53769994 -3.61049986 2.47259998 1.53769994 -3.61049986 2.47259998 1.53769994 -3.56550002 2.47259998 1.53769994 -3.56550002 2.67210007 -1.52830005 -3.61049986 2.67210007 -1.52830005 -3.61049986 2.67210007 -1.52830005 -3.56550002 2.67210007 -1.52830005 -3.56550002 2.51800013 -1.39300001 -3.61049986 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_1_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_1_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_1_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_1_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_2_1" name="rafter_45x145_2" >
+      <mesh>
+        <source id="rafter_45x145_2_1-positions" name="rafter_45x145_2_1-positions">
+          <float_array id="rafter_45x145_2_1-positions-array" count="72"> -3.1099999 2.51800013 -1.39300001 -3.1099999 2.33730006 1.3836 -3.1099999 2.47259998 1.53769994 -3.1099999 2.67210007 -1.52830005 -3.06500006 2.51800013 -1.39300001 -3.06500006 2.67210007 -1.52830005 -3.06500006 2.47259998 1.53769994 -3.06500006 2.33730006 1.3836 -3.1099999 2.51800013 -1.39300001 -3.06500006 2.51800013 -1.39300001 -3.06500006 2.33730006 1.3836 -3.1099999 2.33730006 1.3836 -3.1099999 2.33730006 1.3836 -3.06500006 2.33730006 1.3836 -3.06500006 2.47259998 1.53769994 -3.1099999 2.47259998 1.53769994 -3.1099999 2.47259998 1.53769994 -3.06500006 2.47259998 1.53769994 -3.06500006 2.67210007 -1.52830005 -3.1099999 2.67210007 -1.52830005 -3.1099999 2.67210007 -1.52830005 -3.06500006 2.67210007 -1.52830005 -3.06500006 2.51800013 -1.39300001 -3.1099999 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_2_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_2_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_2_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_2_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_3_1" name="rafter_45x145_3" >
+      <mesh>
+        <source id="rafter_45x145_3_1-positions" name="rafter_45x145_3_1-positions">
+          <float_array id="rafter_45x145_3_1-positions-array" count="72"> -2.39590001 2.51800013 -1.39300001 -2.39590001 2.33730006 1.3836 -2.39590001 2.47259998 1.53769994 -2.39590001 2.67210007 -1.52830005 -2.35089993 2.51800013 -1.39300001 -2.35089993 2.67210007 -1.52830005 -2.35089993 2.47259998 1.53769994 -2.35089993 2.33730006 1.3836 -2.39590001 2.51800013 -1.39300001 -2.35089993 2.51800013 -1.39300001 -2.35089993 2.33730006 1.3836 -2.39590001 2.33730006 1.3836 -2.39590001 2.33730006 1.3836 -2.35089993 2.33730006 1.3836 -2.35089993 2.47259998 1.53769994 -2.39590001 2.47259998 1.53769994 -2.39590001 2.47259998 1.53769994 -2.35089993 2.47259998 1.53769994 -2.35089993 2.67210007 -1.52830005 -2.39590001 2.67210007 -1.52830005 -2.39590001 2.67210007 -1.52830005 -2.35089993 2.67210007 -1.52830005 -2.35089993 2.51800013 -1.39300001 -2.39590001 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_3_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_3_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_3_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_3_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_4_1" name="rafter_45x145_4" >
+      <mesh>
+        <source id="rafter_45x145_4_1-positions" name="rafter_45x145_4_1-positions">
+          <float_array id="rafter_45x145_4_1-positions-array" count="72"> -1.68169999 2.51800013 -1.39300001 -1.68169999 2.33730006 1.3836 -1.68169999 2.47259998 1.53769994 -1.68169999 2.67210007 -1.52830005 -1.63669991 2.51800013 -1.39300001 -1.63669991 2.67210007 -1.52830005 -1.63669991 2.47259998 1.53769994 -1.63669991 2.33730006 1.3836 -1.68169999 2.51800013 -1.39300001 -1.63669991 2.51800013 -1.39300001 -1.63669991 2.33730006 1.3836 -1.68169999 2.33730006 1.3836 -1.68169999 2.33730006 1.3836 -1.63669991 2.33730006 1.3836 -1.63669991 2.47259998 1.53769994 -1.68169999 2.47259998 1.53769994 -1.68169999 2.47259998 1.53769994 -1.63669991 2.47259998 1.53769994 -1.63669991 2.67210007 -1.52830005 -1.68169999 2.67210007 -1.52830005 -1.68169999 2.67210007 -1.52830005 -1.63669991 2.67210007 -1.52830005 -1.63669991 2.51800013 -1.39300001 -1.68169999 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_4_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_4_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_4_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_4_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_5_1" name="rafter_45x145_5" >
+      <mesh>
+        <source id="rafter_45x145_5_1-positions" name="rafter_45x145_5_1-positions">
+          <float_array id="rafter_45x145_5_1-positions-array" count="72"> -0.967599988 2.51800013 -1.39300001 -0.967599988 2.33730006 1.3836 -0.967599988 2.47259998 1.53769994 -0.967599988 2.67210007 -1.52830005 -0.922599971 2.51800013 -1.39300001 -0.922599971 2.67210007 -1.52830005 -0.922599971 2.47259998 1.53769994 -0.922599971 2.33730006 1.3836 -0.967599988 2.51800013 -1.39300001 -0.922599971 2.51800013 -1.39300001 -0.922599971 2.33730006 1.3836 -0.967599988 2.33730006 1.3836 -0.967599988 2.33730006 1.3836 -0.922599971 2.33730006 1.3836 -0.922599971 2.47259998 1.53769994 -0.967599988 2.47259998 1.53769994 -0.967599988 2.47259998 1.53769994 -0.922599971 2.47259998 1.53769994 -0.922599971 2.67210007 -1.52830005 -0.967599988 2.67210007 -1.52830005 -0.967599988 2.67210007 -1.52830005 -0.922599971 2.67210007 -1.52830005 -0.922599971 2.51800013 -1.39300001 -0.967599988 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_5_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_5_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_5_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_5_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_6_1" name="rafter_45x145_6" >
+      <mesh>
+        <source id="rafter_45x145_6_1-positions" name="rafter_45x145_6_1-positions">
+          <float_array id="rafter_45x145_6_1-positions-array" count="72"> -0.253399998 2.51800013 -1.39300001 -0.253399998 2.33730006 1.3836 -0.253399998 2.47259998 1.53769994 -0.253399998 2.67210007 -1.52830005 -0.208399996 2.51800013 -1.39300001 -0.208399996 2.67210007 -1.52830005 -0.208399996 2.47259998 1.53769994 -0.208399996 2.33730006 1.3836 -0.253399998 2.51800013 -1.39300001 -0.208399996 2.51800013 -1.39300001 -0.208399996 2.33730006 1.3836 -0.253399998 2.33730006 1.3836 -0.253399998 2.33730006 1.3836 -0.208399996 2.33730006 1.3836 -0.208399996 2.47259998 1.53769994 -0.253399998 2.47259998 1.53769994 -0.253399998 2.47259998 1.53769994 -0.208399996 2.47259998 1.53769994 -0.208399996 2.67210007 -1.52830005 -0.253399998 2.67210007 -1.52830005 -0.253399998 2.67210007 -1.52830005 -0.208399996 2.67210007 -1.52830005 -0.208399996 2.51800013 -1.39300001 -0.253399998 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_6_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_6_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_6_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_6_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_7_1" name="rafter_45x145_7" >
+      <mesh>
+        <source id="rafter_45x145_7_1-positions" name="rafter_45x145_7_1-positions">
+          <float_array id="rafter_45x145_7_1-positions-array" count="72"> 0.460700005 2.51800013 -1.39300001 0.460700005 2.33730006 1.3836 0.460700005 2.47259998 1.53769994 0.460700005 2.67210007 -1.52830005 0.505699992 2.51800013 -1.39300001 0.505699992 2.67210007 -1.52830005 0.505699992 2.47259998 1.53769994 0.505699992 2.33730006 1.3836 0.460700005 2.51800013 -1.39300001 0.505699992 2.51800013 -1.39300001 0.505699992 2.33730006 1.3836 0.460700005 2.33730006 1.3836 0.460700005 2.33730006 1.3836 0.505699992 2.33730006 1.3836 0.505699992 2.47259998 1.53769994 0.460700005 2.47259998 1.53769994 0.460700005 2.47259998 1.53769994 0.505699992 2.47259998 1.53769994 0.505699992 2.67210007 -1.52830005 0.460700005 2.67210007 -1.52830005 0.460700005 2.67210007 -1.52830005 0.505699992 2.67210007 -1.52830005 0.505699992 2.51800013 -1.39300001 0.460700005 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_7_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_7_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_7_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_7_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_8_1" name="rafter_45x145_8" >
+      <mesh>
+        <source id="rafter_45x145_8_1-positions" name="rafter_45x145_8_1-positions">
+          <float_array id="rafter_45x145_8_1-positions-array" count="72"> 1.17490005 2.51800013 -1.39300001 1.17490005 2.33730006 1.3836 1.17490005 2.47259998 1.53769994 1.17490005 2.67210007 -1.52830005 1.21990001 2.51800013 -1.39300001 1.21990001 2.67210007 -1.52830005 1.21990001 2.47259998 1.53769994 1.21990001 2.33730006 1.3836 1.17490005 2.51800013 -1.39300001 1.21990001 2.51800013 -1.39300001 1.21990001 2.33730006 1.3836 1.17490005 2.33730006 1.3836 1.17490005 2.33730006 1.3836 1.21990001 2.33730006 1.3836 1.21990001 2.47259998 1.53769994 1.17490005 2.47259998 1.53769994 1.17490005 2.47259998 1.53769994 1.21990001 2.47259998 1.53769994 1.21990001 2.67210007 -1.52830005 1.17490005 2.67210007 -1.52830005 1.17490005 2.67210007 -1.52830005 1.21990001 2.67210007 -1.52830005 1.21990001 2.51800013 -1.39300001 1.17490005 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_8_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_8_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_8_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_8_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_9_1" name="rafter_45x145_9" >
+      <mesh>
+        <source id="rafter_45x145_9_1-positions" name="rafter_45x145_9_1-positions">
+          <float_array id="rafter_45x145_9_1-positions-array" count="72"> 1.88899994 2.51800013 -1.39300001 1.88899994 2.33730006 1.3836 1.88899994 2.47259998 1.53769994 1.88899994 2.67210007 -1.52830005 1.93400002 2.51800013 -1.39300001 1.93400002 2.67210007 -1.52830005 1.93400002 2.47259998 1.53769994 1.93400002 2.33730006 1.3836 1.88899994 2.51800013 -1.39300001 1.93400002 2.51800013 -1.39300001 1.93400002 2.33730006 1.3836 1.88899994 2.33730006 1.3836 1.88899994 2.33730006 1.3836 1.93400002 2.33730006 1.3836 1.93400002 2.47259998 1.53769994 1.88899994 2.47259998 1.53769994 1.88899994 2.47259998 1.53769994 1.93400002 2.47259998 1.53769994 1.93400002 2.67210007 -1.52830005 1.88899994 2.67210007 -1.52830005 1.88899994 2.67210007 -1.52830005 1.93400002 2.67210007 -1.52830005 1.93400002 2.51800013 -1.39300001 1.88899994 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_9_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_9_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_9_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_9_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="rafter_45x145_10_1" name="rafter_45x145_10" >
+      <mesh>
+        <source id="rafter_45x145_10_1-positions" name="rafter_45x145_10_1-positions">
+          <float_array id="rafter_45x145_10_1-positions-array" count="72"> 2.3894999 2.51800013 -1.39300001 2.3894999 2.33730006 1.3836 2.3894999 2.47259998 1.53769994 2.3894999 2.67210007 -1.52830005 2.43449998 2.51800013 -1.39300001 2.43449998 2.67210007 -1.52830005 2.43449998 2.47259998 1.53769994 2.43449998 2.33730006 1.3836 2.3894999 2.51800013 -1.39300001 2.43449998 2.51800013 -1.39300001 2.43449998 2.33730006 1.3836 2.3894999 2.33730006 1.3836 2.3894999 2.33730006 1.3836 2.43449998 2.33730006 1.3836 2.43449998 2.47259998 1.53769994 2.3894999 2.47259998 1.53769994 2.3894999 2.47259998 1.53769994 2.43449998 2.47259998 1.53769994 2.43449998 2.67210007 -1.52830005 2.3894999 2.67210007 -1.52830005 2.3894999 2.67210007 -1.52830005 2.43449998 2.67210007 -1.52830005 2.43449998 2.51800013 -1.39300001 2.3894999 2.51800013 -1.39300001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#rafter_45x145_10_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rafter_45x145_10_1-vertices">
+          <input semantic="POSITION" source="#rafter_45x145_10_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#rafter_45x145_10_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="clear_polycarbonate_roof_1" name="clear_polycarbonate_roof" >
+      <mesh>
+        <source id="clear_polycarbonate_roof_1-positions" name="clear_polycarbonate_roof_1-positions">
+          <float_array id="clear_polycarbonate_roof_1-positions-array" count="72"> -3.58800006 2.68079996 -1.53299999 2.41199994 2.68079996 -1.53299999 2.41199994 2.69880009 -1.53299999 -3.58800006 2.69880009 -1.53299999 -3.58800006 2.48119998 1.53299999 -3.58800006 2.49919987 1.53299999 2.41199994 2.49919987 1.53299999 2.41199994 2.48119998 1.53299999 -3.58800006 2.68079996 -1.53299999 -3.58800006 2.48119998 1.53299999 2.41199994 2.48119998 1.53299999 2.41199994 2.68079996 -1.53299999 2.41199994 2.68079996 -1.53299999 2.41199994 2.48119998 1.53299999 2.41199994 2.49919987 1.53299999 2.41199994 2.69880009 -1.53299999 2.41199994 2.69880009 -1.53299999 2.41199994 2.49919987 1.53299999 -3.58800006 2.49919987 1.53299999 -3.58800006 2.69880009 -1.53299999 -3.58800006 2.69880009 -1.53299999 -3.58800006 2.49919987 1.53299999 -3.58800006 2.48119998 1.53299999 -3.58800006 2.68079996 -1.53299999 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#clear_polycarbonate_roof_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="clear_polycarbonate_roof_1-vertices">
+          <input semantic="POSITION" source="#clear_polycarbonate_roof_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#clear_polycarbonate_roof_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_1_1" name="long_privacy_slat_1" >
+      <mesh>
+        <source id="long_privacy_slat_1_1-positions" name="long_privacy_slat_1_1-positions">
+          <float_array id="long_privacy_slat_1_1-positions-array" count="72"> -3.18000007 0 1.10000002 2.00399995 0 1.10000002 2.00399995 0.0949999988 1.10000002 -3.18000007 0.0949999988 1.10000002 -3.18000007 0 1.12 -3.18000007 0.0949999988 1.12 2.00399995 0.0949999988 1.12 2.00399995 0 1.12 -3.18000007 0 1.10000002 -3.18000007 0 1.12 2.00399995 0 1.12 2.00399995 0 1.10000002 2.00399995 0 1.10000002 2.00399995 0 1.12 2.00399995 0.0949999988 1.12 2.00399995 0.0949999988 1.10000002 2.00399995 0.0949999988 1.10000002 2.00399995 0.0949999988 1.12 -3.18000007 0.0949999988 1.12 -3.18000007 0.0949999988 1.10000002 -3.18000007 0.0949999988 1.10000002 -3.18000007 0.0949999988 1.12 -3.18000007 0 1.12 -3.18000007 0 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_1_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_1_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_1_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_1_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_2_1" name="long_privacy_slat_2" >
+      <mesh>
+        <source id="long_privacy_slat_2_1-positions" name="long_privacy_slat_2_1-positions">
+          <float_array id="long_privacy_slat_2_1-positions-array" count="72"> -3.18000007 0.165000007 1.10000002 2.00399995 0.165000007 1.10000002 2.00399995 0.25999999 1.10000002 -3.18000007 0.25999999 1.10000002 -3.18000007 0.165000007 1.12 -3.18000007 0.25999999 1.12 2.00399995 0.25999999 1.12 2.00399995 0.165000007 1.12 -3.18000007 0.165000007 1.10000002 -3.18000007 0.165000007 1.12 2.00399995 0.165000007 1.12 2.00399995 0.165000007 1.10000002 2.00399995 0.165000007 1.10000002 2.00399995 0.165000007 1.12 2.00399995 0.25999999 1.12 2.00399995 0.25999999 1.10000002 2.00399995 0.25999999 1.10000002 2.00399995 0.25999999 1.12 -3.18000007 0.25999999 1.12 -3.18000007 0.25999999 1.10000002 -3.18000007 0.25999999 1.10000002 -3.18000007 0.25999999 1.12 -3.18000007 0.165000007 1.12 -3.18000007 0.165000007 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_2_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_2_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_2_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_2_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_3_1" name="long_privacy_slat_3" >
+      <mesh>
+        <source id="long_privacy_slat_3_1-positions" name="long_privacy_slat_3_1-positions">
+          <float_array id="long_privacy_slat_3_1-positions-array" count="72"> -3.18000007 0.330000013 1.10000002 2.00399995 0.330000013 1.10000002 2.00399995 0.425000012 1.10000002 -3.18000007 0.425000012 1.10000002 -3.18000007 0.330000013 1.12 -3.18000007 0.425000012 1.12 2.00399995 0.425000012 1.12 2.00399995 0.330000013 1.12 -3.18000007 0.330000013 1.10000002 -3.18000007 0.330000013 1.12 2.00399995 0.330000013 1.12 2.00399995 0.330000013 1.10000002 2.00399995 0.330000013 1.10000002 2.00399995 0.330000013 1.12 2.00399995 0.425000012 1.12 2.00399995 0.425000012 1.10000002 2.00399995 0.425000012 1.10000002 2.00399995 0.425000012 1.12 -3.18000007 0.425000012 1.12 -3.18000007 0.425000012 1.10000002 -3.18000007 0.425000012 1.10000002 -3.18000007 0.425000012 1.12 -3.18000007 0.330000013 1.12 -3.18000007 0.330000013 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_3_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_3_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_3_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_3_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_4_1" name="long_privacy_slat_4" >
+      <mesh>
+        <source id="long_privacy_slat_4_1-positions" name="long_privacy_slat_4_1-positions">
+          <float_array id="long_privacy_slat_4_1-positions-array" count="72"> -3.18000007 0.495000005 1.10000002 2.00399995 0.495000005 1.10000002 2.00399995 0.589999974 1.10000002 -3.18000007 0.589999974 1.10000002 -3.18000007 0.495000005 1.12 -3.18000007 0.589999974 1.12 2.00399995 0.589999974 1.12 2.00399995 0.495000005 1.12 -3.18000007 0.495000005 1.10000002 -3.18000007 0.495000005 1.12 2.00399995 0.495000005 1.12 2.00399995 0.495000005 1.10000002 2.00399995 0.495000005 1.10000002 2.00399995 0.495000005 1.12 2.00399995 0.589999974 1.12 2.00399995 0.589999974 1.10000002 2.00399995 0.589999974 1.10000002 2.00399995 0.589999974 1.12 -3.18000007 0.589999974 1.12 -3.18000007 0.589999974 1.10000002 -3.18000007 0.589999974 1.10000002 -3.18000007 0.589999974 1.12 -3.18000007 0.495000005 1.12 -3.18000007 0.495000005 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_4_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_4_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_4_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_4_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_5_1" name="long_privacy_slat_5" >
+      <mesh>
+        <source id="long_privacy_slat_5_1-positions" name="long_privacy_slat_5_1-positions">
+          <float_array id="long_privacy_slat_5_1-positions-array" count="72"> -3.18000007 0.660000026 1.10000002 2.00399995 0.660000026 1.10000002 2.00399995 0.754999995 1.10000002 -3.18000007 0.754999995 1.10000002 -3.18000007 0.660000026 1.12 -3.18000007 0.754999995 1.12 2.00399995 0.754999995 1.12 2.00399995 0.660000026 1.12 -3.18000007 0.660000026 1.10000002 -3.18000007 0.660000026 1.12 2.00399995 0.660000026 1.12 2.00399995 0.660000026 1.10000002 2.00399995 0.660000026 1.10000002 2.00399995 0.660000026 1.12 2.00399995 0.754999995 1.12 2.00399995 0.754999995 1.10000002 2.00399995 0.754999995 1.10000002 2.00399995 0.754999995 1.12 -3.18000007 0.754999995 1.12 -3.18000007 0.754999995 1.10000002 -3.18000007 0.754999995 1.10000002 -3.18000007 0.754999995 1.12 -3.18000007 0.660000026 1.12 -3.18000007 0.660000026 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_5_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_5_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_5_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_5_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_6_1" name="long_privacy_slat_6" >
+      <mesh>
+        <source id="long_privacy_slat_6_1-positions" name="long_privacy_slat_6_1-positions">
+          <float_array id="long_privacy_slat_6_1-positions-array" count="72"> -3.18000007 0.824999988 1.10000002 2.00399995 0.824999988 1.10000002 2.00399995 0.920000017 1.10000002 -3.18000007 0.920000017 1.10000002 -3.18000007 0.824999988 1.12 -3.18000007 0.920000017 1.12 2.00399995 0.920000017 1.12 2.00399995 0.824999988 1.12 -3.18000007 0.824999988 1.10000002 -3.18000007 0.824999988 1.12 2.00399995 0.824999988 1.12 2.00399995 0.824999988 1.10000002 2.00399995 0.824999988 1.10000002 2.00399995 0.824999988 1.12 2.00399995 0.920000017 1.12 2.00399995 0.920000017 1.10000002 2.00399995 0.920000017 1.10000002 2.00399995 0.920000017 1.12 -3.18000007 0.920000017 1.12 -3.18000007 0.920000017 1.10000002 -3.18000007 0.920000017 1.10000002 -3.18000007 0.920000017 1.12 -3.18000007 0.824999988 1.12 -3.18000007 0.824999988 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_6_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_6_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_6_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_6_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_7_1" name="long_privacy_slat_7" >
+      <mesh>
+        <source id="long_privacy_slat_7_1-positions" name="long_privacy_slat_7_1-positions">
+          <float_array id="long_privacy_slat_7_1-positions-array" count="72"> -3.18000007 0.99000001 1.10000002 2.00399995 0.99000001 1.10000002 2.00399995 1.08500004 1.10000002 -3.18000007 1.08500004 1.10000002 -3.18000007 0.99000001 1.12 -3.18000007 1.08500004 1.12 2.00399995 1.08500004 1.12 2.00399995 0.99000001 1.12 -3.18000007 0.99000001 1.10000002 -3.18000007 0.99000001 1.12 2.00399995 0.99000001 1.12 2.00399995 0.99000001 1.10000002 2.00399995 0.99000001 1.10000002 2.00399995 0.99000001 1.12 2.00399995 1.08500004 1.12 2.00399995 1.08500004 1.10000002 2.00399995 1.08500004 1.10000002 2.00399995 1.08500004 1.12 -3.18000007 1.08500004 1.12 -3.18000007 1.08500004 1.10000002 -3.18000007 1.08500004 1.10000002 -3.18000007 1.08500004 1.12 -3.18000007 0.99000001 1.12 -3.18000007 0.99000001 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_7_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_7_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_7_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_7_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_8_1" name="long_privacy_slat_8" >
+      <mesh>
+        <source id="long_privacy_slat_8_1-positions" name="long_privacy_slat_8_1-positions">
+          <float_array id="long_privacy_slat_8_1-positions-array" count="72"> -3.18000007 1.15499997 1.10000002 2.00399995 1.15499997 1.10000002 2.00399995 1.25 1.10000002 -3.18000007 1.25 1.10000002 -3.18000007 1.15499997 1.12 -3.18000007 1.25 1.12 2.00399995 1.25 1.12 2.00399995 1.15499997 1.12 -3.18000007 1.15499997 1.10000002 -3.18000007 1.15499997 1.12 2.00399995 1.15499997 1.12 2.00399995 1.15499997 1.10000002 2.00399995 1.15499997 1.10000002 2.00399995 1.15499997 1.12 2.00399995 1.25 1.12 2.00399995 1.25 1.10000002 2.00399995 1.25 1.10000002 2.00399995 1.25 1.12 -3.18000007 1.25 1.12 -3.18000007 1.25 1.10000002 -3.18000007 1.25 1.10000002 -3.18000007 1.25 1.12 -3.18000007 1.15499997 1.12 -3.18000007 1.15499997 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_8_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_8_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_8_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_8_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_9_1" name="long_privacy_slat_9" >
+      <mesh>
+        <source id="long_privacy_slat_9_1-positions" name="long_privacy_slat_9_1-positions">
+          <float_array id="long_privacy_slat_9_1-positions-array" count="72"> -3.18000007 1.31999993 1.10000002 2.00399995 1.31999993 1.10000002 2.00399995 1.41499996 1.10000002 -3.18000007 1.41499996 1.10000002 -3.18000007 1.31999993 1.12 -3.18000007 1.41499996 1.12 2.00399995 1.41499996 1.12 2.00399995 1.31999993 1.12 -3.18000007 1.31999993 1.10000002 -3.18000007 1.31999993 1.12 2.00399995 1.31999993 1.12 2.00399995 1.31999993 1.10000002 2.00399995 1.31999993 1.10000002 2.00399995 1.31999993 1.12 2.00399995 1.41499996 1.12 2.00399995 1.41499996 1.10000002 2.00399995 1.41499996 1.10000002 2.00399995 1.41499996 1.12 -3.18000007 1.41499996 1.12 -3.18000007 1.41499996 1.10000002 -3.18000007 1.41499996 1.10000002 -3.18000007 1.41499996 1.12 -3.18000007 1.31999993 1.12 -3.18000007 1.31999993 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_9_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_9_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_9_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_9_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_10_1" name="long_privacy_slat_10" >
+      <mesh>
+        <source id="long_privacy_slat_10_1-positions" name="long_privacy_slat_10_1-positions">
+          <float_array id="long_privacy_slat_10_1-positions-array" count="72"> -3.18000007 1.48500001 1.10000002 2.00399995 1.48500001 1.10000002 2.00399995 1.57999992 1.10000002 -3.18000007 1.57999992 1.10000002 -3.18000007 1.48500001 1.12 -3.18000007 1.57999992 1.12 2.00399995 1.57999992 1.12 2.00399995 1.48500001 1.12 -3.18000007 1.48500001 1.10000002 -3.18000007 1.48500001 1.12 2.00399995 1.48500001 1.12 2.00399995 1.48500001 1.10000002 2.00399995 1.48500001 1.10000002 2.00399995 1.48500001 1.12 2.00399995 1.57999992 1.12 2.00399995 1.57999992 1.10000002 2.00399995 1.57999992 1.10000002 2.00399995 1.57999992 1.12 -3.18000007 1.57999992 1.12 -3.18000007 1.57999992 1.10000002 -3.18000007 1.57999992 1.10000002 -3.18000007 1.57999992 1.12 -3.18000007 1.48500001 1.12 -3.18000007 1.48500001 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_10_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_10_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_10_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_10_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_11_1" name="long_privacy_slat_11" >
+      <mesh>
+        <source id="long_privacy_slat_11_1-positions" name="long_privacy_slat_11_1-positions">
+          <float_array id="long_privacy_slat_11_1-positions-array" count="72"> -3.18000007 1.64999998 1.10000002 2.00399995 1.64999998 1.10000002 2.00399995 1.745 1.10000002 -3.18000007 1.745 1.10000002 -3.18000007 1.64999998 1.12 -3.18000007 1.745 1.12 2.00399995 1.745 1.12 2.00399995 1.64999998 1.12 -3.18000007 1.64999998 1.10000002 -3.18000007 1.64999998 1.12 2.00399995 1.64999998 1.12 2.00399995 1.64999998 1.10000002 2.00399995 1.64999998 1.10000002 2.00399995 1.64999998 1.12 2.00399995 1.745 1.12 2.00399995 1.745 1.10000002 2.00399995 1.745 1.10000002 2.00399995 1.745 1.12 -3.18000007 1.745 1.12 -3.18000007 1.745 1.10000002 -3.18000007 1.745 1.10000002 -3.18000007 1.745 1.12 -3.18000007 1.64999998 1.12 -3.18000007 1.64999998 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_11_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_11_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_11_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_11_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_12_1" name="long_privacy_slat_12" >
+      <mesh>
+        <source id="long_privacy_slat_12_1-positions" name="long_privacy_slat_12_1-positions">
+          <float_array id="long_privacy_slat_12_1-positions-array" count="72"> -3.18000007 1.81500006 1.10000002 2.00399995 1.81500006 1.10000002 2.00399995 1.91000009 1.10000002 -3.18000007 1.91000009 1.10000002 -3.18000007 1.81500006 1.12 -3.18000007 1.91000009 1.12 2.00399995 1.91000009 1.12 2.00399995 1.81500006 1.12 -3.18000007 1.81500006 1.10000002 -3.18000007 1.81500006 1.12 2.00399995 1.81500006 1.12 2.00399995 1.81500006 1.10000002 2.00399995 1.81500006 1.10000002 2.00399995 1.81500006 1.12 2.00399995 1.91000009 1.12 2.00399995 1.91000009 1.10000002 2.00399995 1.91000009 1.10000002 2.00399995 1.91000009 1.12 -3.18000007 1.91000009 1.12 -3.18000007 1.91000009 1.10000002 -3.18000007 1.91000009 1.10000002 -3.18000007 1.91000009 1.12 -3.18000007 1.81500006 1.12 -3.18000007 1.81500006 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_12_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_12_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_12_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_12_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_13_1" name="long_privacy_slat_13" >
+      <mesh>
+        <source id="long_privacy_slat_13_1-positions" name="long_privacy_slat_13_1-positions">
+          <float_array id="long_privacy_slat_13_1-positions-array" count="72"> -3.18000007 1.98000002 1.10000002 2.00399995 1.98000002 1.10000002 2.00399995 2.07500005 1.10000002 -3.18000007 2.07500005 1.10000002 -3.18000007 1.98000002 1.12 -3.18000007 2.07500005 1.12 2.00399995 2.07500005 1.12 2.00399995 1.98000002 1.12 -3.18000007 1.98000002 1.10000002 -3.18000007 1.98000002 1.12 2.00399995 1.98000002 1.12 2.00399995 1.98000002 1.10000002 2.00399995 1.98000002 1.10000002 2.00399995 1.98000002 1.12 2.00399995 2.07500005 1.12 2.00399995 2.07500005 1.10000002 2.00399995 2.07500005 1.10000002 2.00399995 2.07500005 1.12 -3.18000007 2.07500005 1.12 -3.18000007 2.07500005 1.10000002 -3.18000007 2.07500005 1.10000002 -3.18000007 2.07500005 1.12 -3.18000007 1.98000002 1.12 -3.18000007 1.98000002 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_13_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_13_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_13_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_13_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="long_privacy_slat_14_1" name="long_privacy_slat_14" >
+      <mesh>
+        <source id="long_privacy_slat_14_1-positions" name="long_privacy_slat_14_1-positions">
+          <float_array id="long_privacy_slat_14_1-positions-array" count="72"> -3.18000007 2.14499998 1.10000002 2.00399995 2.14499998 1.10000002 2.00399995 2.24000001 1.10000002 -3.18000007 2.24000001 1.10000002 -3.18000007 2.14499998 1.12 -3.18000007 2.24000001 1.12 2.00399995 2.24000001 1.12 2.00399995 2.14499998 1.12 -3.18000007 2.14499998 1.10000002 -3.18000007 2.14499998 1.12 2.00399995 2.14499998 1.12 2.00399995 2.14499998 1.10000002 2.00399995 2.14499998 1.10000002 2.00399995 2.14499998 1.12 2.00399995 2.24000001 1.12 2.00399995 2.24000001 1.10000002 2.00399995 2.24000001 1.10000002 2.00399995 2.24000001 1.12 -3.18000007 2.24000001 1.12 -3.18000007 2.24000001 1.10000002 -3.18000007 2.24000001 1.10000002 -3.18000007 2.24000001 1.12 -3.18000007 2.14499998 1.12 -3.18000007 2.14499998 1.10000002 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#long_privacy_slat_14_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="long_privacy_slat_14_1-vertices">
+          <input semantic="POSITION" source="#long_privacy_slat_14_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#long_privacy_slat_14_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_1_1" name="short_privacy_slat_1" >
+      <mesh>
+        <source id="short_privacy_slat_1_1-positions" name="short_privacy_slat_1_1-positions">
+          <float_array id="short_privacy_slat_1_1-positions-array" count="72"> -3.11999989 0 -1.11000001 -3.0999999 0 -1.11000001 -3.0999999 0.0949999988 -1.11000001 -3.11999989 0.0949999988 -1.11000001 -3.11999989 0 1.11000001 -3.11999989 0.0949999988 1.11000001 -3.0999999 0.0949999988 1.11000001 -3.0999999 0 1.11000001 -3.11999989 0 -1.11000001 -3.11999989 0 1.11000001 -3.0999999 0 1.11000001 -3.0999999 0 -1.11000001 -3.0999999 0 -1.11000001 -3.0999999 0 1.11000001 -3.0999999 0.0949999988 1.11000001 -3.0999999 0.0949999988 -1.11000001 -3.0999999 0.0949999988 -1.11000001 -3.0999999 0.0949999988 1.11000001 -3.11999989 0.0949999988 1.11000001 -3.11999989 0.0949999988 -1.11000001 -3.11999989 0.0949999988 -1.11000001 -3.11999989 0.0949999988 1.11000001 -3.11999989 0 1.11000001 -3.11999989 0 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_1_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_1_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_1_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_1_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_2_1" name="short_privacy_slat_2" >
+      <mesh>
+        <source id="short_privacy_slat_2_1-positions" name="short_privacy_slat_2_1-positions">
+          <float_array id="short_privacy_slat_2_1-positions-array" count="72"> -3.11999989 0.165000007 -1.11000001 -3.0999999 0.165000007 -1.11000001 -3.0999999 0.25999999 -1.11000001 -3.11999989 0.25999999 -1.11000001 -3.11999989 0.165000007 1.11000001 -3.11999989 0.25999999 1.11000001 -3.0999999 0.25999999 1.11000001 -3.0999999 0.165000007 1.11000001 -3.11999989 0.165000007 -1.11000001 -3.11999989 0.165000007 1.11000001 -3.0999999 0.165000007 1.11000001 -3.0999999 0.165000007 -1.11000001 -3.0999999 0.165000007 -1.11000001 -3.0999999 0.165000007 1.11000001 -3.0999999 0.25999999 1.11000001 -3.0999999 0.25999999 -1.11000001 -3.0999999 0.25999999 -1.11000001 -3.0999999 0.25999999 1.11000001 -3.11999989 0.25999999 1.11000001 -3.11999989 0.25999999 -1.11000001 -3.11999989 0.25999999 -1.11000001 -3.11999989 0.25999999 1.11000001 -3.11999989 0.165000007 1.11000001 -3.11999989 0.165000007 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_2_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_2_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_2_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_2_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_3_1" name="short_privacy_slat_3" >
+      <mesh>
+        <source id="short_privacy_slat_3_1-positions" name="short_privacy_slat_3_1-positions">
+          <float_array id="short_privacy_slat_3_1-positions-array" count="72"> -3.11999989 0.330000013 -1.11000001 -3.0999999 0.330000013 -1.11000001 -3.0999999 0.425000012 -1.11000001 -3.11999989 0.425000012 -1.11000001 -3.11999989 0.330000013 1.11000001 -3.11999989 0.425000012 1.11000001 -3.0999999 0.425000012 1.11000001 -3.0999999 0.330000013 1.11000001 -3.11999989 0.330000013 -1.11000001 -3.11999989 0.330000013 1.11000001 -3.0999999 0.330000013 1.11000001 -3.0999999 0.330000013 -1.11000001 -3.0999999 0.330000013 -1.11000001 -3.0999999 0.330000013 1.11000001 -3.0999999 0.425000012 1.11000001 -3.0999999 0.425000012 -1.11000001 -3.0999999 0.425000012 -1.11000001 -3.0999999 0.425000012 1.11000001 -3.11999989 0.425000012 1.11000001 -3.11999989 0.425000012 -1.11000001 -3.11999989 0.425000012 -1.11000001 -3.11999989 0.425000012 1.11000001 -3.11999989 0.330000013 1.11000001 -3.11999989 0.330000013 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_3_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_3_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_3_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_3_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_4_1" name="short_privacy_slat_4" >
+      <mesh>
+        <source id="short_privacy_slat_4_1-positions" name="short_privacy_slat_4_1-positions">
+          <float_array id="short_privacy_slat_4_1-positions-array" count="72"> -3.11999989 0.495000005 -1.11000001 -3.0999999 0.495000005 -1.11000001 -3.0999999 0.589999974 -1.11000001 -3.11999989 0.589999974 -1.11000001 -3.11999989 0.495000005 1.11000001 -3.11999989 0.589999974 1.11000001 -3.0999999 0.589999974 1.11000001 -3.0999999 0.495000005 1.11000001 -3.11999989 0.495000005 -1.11000001 -3.11999989 0.495000005 1.11000001 -3.0999999 0.495000005 1.11000001 -3.0999999 0.495000005 -1.11000001 -3.0999999 0.495000005 -1.11000001 -3.0999999 0.495000005 1.11000001 -3.0999999 0.589999974 1.11000001 -3.0999999 0.589999974 -1.11000001 -3.0999999 0.589999974 -1.11000001 -3.0999999 0.589999974 1.11000001 -3.11999989 0.589999974 1.11000001 -3.11999989 0.589999974 -1.11000001 -3.11999989 0.589999974 -1.11000001 -3.11999989 0.589999974 1.11000001 -3.11999989 0.495000005 1.11000001 -3.11999989 0.495000005 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_4_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_4_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_4_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_4_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_5_1" name="short_privacy_slat_5" >
+      <mesh>
+        <source id="short_privacy_slat_5_1-positions" name="short_privacy_slat_5_1-positions">
+          <float_array id="short_privacy_slat_5_1-positions-array" count="72"> -3.11999989 0.660000026 -1.11000001 -3.0999999 0.660000026 -1.11000001 -3.0999999 0.754999995 -1.11000001 -3.11999989 0.754999995 -1.11000001 -3.11999989 0.660000026 1.11000001 -3.11999989 0.754999995 1.11000001 -3.0999999 0.754999995 1.11000001 -3.0999999 0.660000026 1.11000001 -3.11999989 0.660000026 -1.11000001 -3.11999989 0.660000026 1.11000001 -3.0999999 0.660000026 1.11000001 -3.0999999 0.660000026 -1.11000001 -3.0999999 0.660000026 -1.11000001 -3.0999999 0.660000026 1.11000001 -3.0999999 0.754999995 1.11000001 -3.0999999 0.754999995 -1.11000001 -3.0999999 0.754999995 -1.11000001 -3.0999999 0.754999995 1.11000001 -3.11999989 0.754999995 1.11000001 -3.11999989 0.754999995 -1.11000001 -3.11999989 0.754999995 -1.11000001 -3.11999989 0.754999995 1.11000001 -3.11999989 0.660000026 1.11000001 -3.11999989 0.660000026 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_5_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_5_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_5_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_5_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_6_1" name="short_privacy_slat_6" >
+      <mesh>
+        <source id="short_privacy_slat_6_1-positions" name="short_privacy_slat_6_1-positions">
+          <float_array id="short_privacy_slat_6_1-positions-array" count="72"> -3.11999989 0.824999988 -1.11000001 -3.0999999 0.824999988 -1.11000001 -3.0999999 0.920000017 -1.11000001 -3.11999989 0.920000017 -1.11000001 -3.11999989 0.824999988 1.11000001 -3.11999989 0.920000017 1.11000001 -3.0999999 0.920000017 1.11000001 -3.0999999 0.824999988 1.11000001 -3.11999989 0.824999988 -1.11000001 -3.11999989 0.824999988 1.11000001 -3.0999999 0.824999988 1.11000001 -3.0999999 0.824999988 -1.11000001 -3.0999999 0.824999988 -1.11000001 -3.0999999 0.824999988 1.11000001 -3.0999999 0.920000017 1.11000001 -3.0999999 0.920000017 -1.11000001 -3.0999999 0.920000017 -1.11000001 -3.0999999 0.920000017 1.11000001 -3.11999989 0.920000017 1.11000001 -3.11999989 0.920000017 -1.11000001 -3.11999989 0.920000017 -1.11000001 -3.11999989 0.920000017 1.11000001 -3.11999989 0.824999988 1.11000001 -3.11999989 0.824999988 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_6_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_6_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_6_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_6_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_7_1" name="short_privacy_slat_7" >
+      <mesh>
+        <source id="short_privacy_slat_7_1-positions" name="short_privacy_slat_7_1-positions">
+          <float_array id="short_privacy_slat_7_1-positions-array" count="72"> -3.11999989 0.99000001 -1.11000001 -3.0999999 0.99000001 -1.11000001 -3.0999999 1.08500004 -1.11000001 -3.11999989 1.08500004 -1.11000001 -3.11999989 0.99000001 1.11000001 -3.11999989 1.08500004 1.11000001 -3.0999999 1.08500004 1.11000001 -3.0999999 0.99000001 1.11000001 -3.11999989 0.99000001 -1.11000001 -3.11999989 0.99000001 1.11000001 -3.0999999 0.99000001 1.11000001 -3.0999999 0.99000001 -1.11000001 -3.0999999 0.99000001 -1.11000001 -3.0999999 0.99000001 1.11000001 -3.0999999 1.08500004 1.11000001 -3.0999999 1.08500004 -1.11000001 -3.0999999 1.08500004 -1.11000001 -3.0999999 1.08500004 1.11000001 -3.11999989 1.08500004 1.11000001 -3.11999989 1.08500004 -1.11000001 -3.11999989 1.08500004 -1.11000001 -3.11999989 1.08500004 1.11000001 -3.11999989 0.99000001 1.11000001 -3.11999989 0.99000001 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_7_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_7_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_7_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_7_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_8_1" name="short_privacy_slat_8" >
+      <mesh>
+        <source id="short_privacy_slat_8_1-positions" name="short_privacy_slat_8_1-positions">
+          <float_array id="short_privacy_slat_8_1-positions-array" count="72"> -3.11999989 1.15499997 -1.11000001 -3.0999999 1.15499997 -1.11000001 -3.0999999 1.25 -1.11000001 -3.11999989 1.25 -1.11000001 -3.11999989 1.15499997 1.11000001 -3.11999989 1.25 1.11000001 -3.0999999 1.25 1.11000001 -3.0999999 1.15499997 1.11000001 -3.11999989 1.15499997 -1.11000001 -3.11999989 1.15499997 1.11000001 -3.0999999 1.15499997 1.11000001 -3.0999999 1.15499997 -1.11000001 -3.0999999 1.15499997 -1.11000001 -3.0999999 1.15499997 1.11000001 -3.0999999 1.25 1.11000001 -3.0999999 1.25 -1.11000001 -3.0999999 1.25 -1.11000001 -3.0999999 1.25 1.11000001 -3.11999989 1.25 1.11000001 -3.11999989 1.25 -1.11000001 -3.11999989 1.25 -1.11000001 -3.11999989 1.25 1.11000001 -3.11999989 1.15499997 1.11000001 -3.11999989 1.15499997 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_8_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_8_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_8_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_8_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_9_1" name="short_privacy_slat_9" >
+      <mesh>
+        <source id="short_privacy_slat_9_1-positions" name="short_privacy_slat_9_1-positions">
+          <float_array id="short_privacy_slat_9_1-positions-array" count="72"> -3.11999989 1.31999993 -1.11000001 -3.0999999 1.31999993 -1.11000001 -3.0999999 1.41499996 -1.11000001 -3.11999989 1.41499996 -1.11000001 -3.11999989 1.31999993 1.11000001 -3.11999989 1.41499996 1.11000001 -3.0999999 1.41499996 1.11000001 -3.0999999 1.31999993 1.11000001 -3.11999989 1.31999993 -1.11000001 -3.11999989 1.31999993 1.11000001 -3.0999999 1.31999993 1.11000001 -3.0999999 1.31999993 -1.11000001 -3.0999999 1.31999993 -1.11000001 -3.0999999 1.31999993 1.11000001 -3.0999999 1.41499996 1.11000001 -3.0999999 1.41499996 -1.11000001 -3.0999999 1.41499996 -1.11000001 -3.0999999 1.41499996 1.11000001 -3.11999989 1.41499996 1.11000001 -3.11999989 1.41499996 -1.11000001 -3.11999989 1.41499996 -1.11000001 -3.11999989 1.41499996 1.11000001 -3.11999989 1.31999993 1.11000001 -3.11999989 1.31999993 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_9_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_9_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_9_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_9_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_10_1" name="short_privacy_slat_10" >
+      <mesh>
+        <source id="short_privacy_slat_10_1-positions" name="short_privacy_slat_10_1-positions">
+          <float_array id="short_privacy_slat_10_1-positions-array" count="72"> -3.11999989 1.48500001 -1.11000001 -3.0999999 1.48500001 -1.11000001 -3.0999999 1.57999992 -1.11000001 -3.11999989 1.57999992 -1.11000001 -3.11999989 1.48500001 1.11000001 -3.11999989 1.57999992 1.11000001 -3.0999999 1.57999992 1.11000001 -3.0999999 1.48500001 1.11000001 -3.11999989 1.48500001 -1.11000001 -3.11999989 1.48500001 1.11000001 -3.0999999 1.48500001 1.11000001 -3.0999999 1.48500001 -1.11000001 -3.0999999 1.48500001 -1.11000001 -3.0999999 1.48500001 1.11000001 -3.0999999 1.57999992 1.11000001 -3.0999999 1.57999992 -1.11000001 -3.0999999 1.57999992 -1.11000001 -3.0999999 1.57999992 1.11000001 -3.11999989 1.57999992 1.11000001 -3.11999989 1.57999992 -1.11000001 -3.11999989 1.57999992 -1.11000001 -3.11999989 1.57999992 1.11000001 -3.11999989 1.48500001 1.11000001 -3.11999989 1.48500001 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_10_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_10_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_10_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_10_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_11_1" name="short_privacy_slat_11" >
+      <mesh>
+        <source id="short_privacy_slat_11_1-positions" name="short_privacy_slat_11_1-positions">
+          <float_array id="short_privacy_slat_11_1-positions-array" count="72"> -3.11999989 1.64999998 -1.11000001 -3.0999999 1.64999998 -1.11000001 -3.0999999 1.745 -1.11000001 -3.11999989 1.745 -1.11000001 -3.11999989 1.64999998 1.11000001 -3.11999989 1.745 1.11000001 -3.0999999 1.745 1.11000001 -3.0999999 1.64999998 1.11000001 -3.11999989 1.64999998 -1.11000001 -3.11999989 1.64999998 1.11000001 -3.0999999 1.64999998 1.11000001 -3.0999999 1.64999998 -1.11000001 -3.0999999 1.64999998 -1.11000001 -3.0999999 1.64999998 1.11000001 -3.0999999 1.745 1.11000001 -3.0999999 1.745 -1.11000001 -3.0999999 1.745 -1.11000001 -3.0999999 1.745 1.11000001 -3.11999989 1.745 1.11000001 -3.11999989 1.745 -1.11000001 -3.11999989 1.745 -1.11000001 -3.11999989 1.745 1.11000001 -3.11999989 1.64999998 1.11000001 -3.11999989 1.64999998 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_11_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_11_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_11_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_11_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_12_1" name="short_privacy_slat_12" >
+      <mesh>
+        <source id="short_privacy_slat_12_1-positions" name="short_privacy_slat_12_1-positions">
+          <float_array id="short_privacy_slat_12_1-positions-array" count="72"> -3.11999989 1.81500006 -1.11000001 -3.0999999 1.81500006 -1.11000001 -3.0999999 1.91000009 -1.11000001 -3.11999989 1.91000009 -1.11000001 -3.11999989 1.81500006 1.11000001 -3.11999989 1.91000009 1.11000001 -3.0999999 1.91000009 1.11000001 -3.0999999 1.81500006 1.11000001 -3.11999989 1.81500006 -1.11000001 -3.11999989 1.81500006 1.11000001 -3.0999999 1.81500006 1.11000001 -3.0999999 1.81500006 -1.11000001 -3.0999999 1.81500006 -1.11000001 -3.0999999 1.81500006 1.11000001 -3.0999999 1.91000009 1.11000001 -3.0999999 1.91000009 -1.11000001 -3.0999999 1.91000009 -1.11000001 -3.0999999 1.91000009 1.11000001 -3.11999989 1.91000009 1.11000001 -3.11999989 1.91000009 -1.11000001 -3.11999989 1.91000009 -1.11000001 -3.11999989 1.91000009 1.11000001 -3.11999989 1.81500006 1.11000001 -3.11999989 1.81500006 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_12_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_12_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_12_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_12_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_13_1" name="short_privacy_slat_13" >
+      <mesh>
+        <source id="short_privacy_slat_13_1-positions" name="short_privacy_slat_13_1-positions">
+          <float_array id="short_privacy_slat_13_1-positions-array" count="72"> -3.11999989 1.98000002 -1.11000001 -3.0999999 1.98000002 -1.11000001 -3.0999999 2.07500005 -1.11000001 -3.11999989 2.07500005 -1.11000001 -3.11999989 1.98000002 1.11000001 -3.11999989 2.07500005 1.11000001 -3.0999999 2.07500005 1.11000001 -3.0999999 1.98000002 1.11000001 -3.11999989 1.98000002 -1.11000001 -3.11999989 1.98000002 1.11000001 -3.0999999 1.98000002 1.11000001 -3.0999999 1.98000002 -1.11000001 -3.0999999 1.98000002 -1.11000001 -3.0999999 1.98000002 1.11000001 -3.0999999 2.07500005 1.11000001 -3.0999999 2.07500005 -1.11000001 -3.0999999 2.07500005 -1.11000001 -3.0999999 2.07500005 1.11000001 -3.11999989 2.07500005 1.11000001 -3.11999989 2.07500005 -1.11000001 -3.11999989 2.07500005 -1.11000001 -3.11999989 2.07500005 1.11000001 -3.11999989 1.98000002 1.11000001 -3.11999989 1.98000002 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_13_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_13_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_13_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_13_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="short_privacy_slat_14_1" name="short_privacy_slat_14" >
+      <mesh>
+        <source id="short_privacy_slat_14_1-positions" name="short_privacy_slat_14_1-positions">
+          <float_array id="short_privacy_slat_14_1-positions-array" count="72"> -3.11999989 2.14499998 -1.11000001 -3.0999999 2.14499998 -1.11000001 -3.0999999 2.24000001 -1.11000001 -3.11999989 2.24000001 -1.11000001 -3.11999989 2.14499998 1.11000001 -3.11999989 2.24000001 1.11000001 -3.0999999 2.24000001 1.11000001 -3.0999999 2.14499998 1.11000001 -3.11999989 2.14499998 -1.11000001 -3.11999989 2.14499998 1.11000001 -3.0999999 2.14499998 1.11000001 -3.0999999 2.14499998 -1.11000001 -3.0999999 2.14499998 -1.11000001 -3.0999999 2.14499998 1.11000001 -3.0999999 2.24000001 1.11000001 -3.0999999 2.24000001 -1.11000001 -3.0999999 2.24000001 -1.11000001 -3.0999999 2.24000001 1.11000001 -3.11999989 2.24000001 1.11000001 -3.11999989 2.24000001 -1.11000001 -3.11999989 2.24000001 -1.11000001 -3.11999989 2.24000001 1.11000001 -3.11999989 2.14499998 1.11000001 -3.11999989 2.14499998 -1.11000001 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#short_privacy_slat_14_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="short_privacy_slat_14_1-vertices">
+          <input semantic="POSITION" source="#short_privacy_slat_14_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#short_privacy_slat_14_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_long_760_-3180_-1180_1" name="upper_corner_brace_long_760_-3180_-1180" >
+      <mesh>
+        <source id="upper_corner_brace_long_760_-3180_-1180_1-positions" name="upper_corner_brace_long_760_-3180_-1180_1-positions">
+          <float_array id="upper_corner_brace_long_760_-3180_-1180_1-positions-array" count="72"> -3.1099999 1.68939996 -1.20249999 -3.1099999 1.87940001 -1.20249999 -2.53999996 2.44939995 -1.20249999 -2.3499999 2.44939995 -1.20249999 -2.3499999 2.44939995 -1.15750003 -2.53999996 2.44939995 -1.15750003 -3.1099999 1.87940001 -1.15750003 -3.1099999 1.68939996 -1.15750003 -3.1099999 1.68939996 -1.20249999 -3.1099999 1.87940001 -1.20249999 -3.1099999 1.87940001 -1.15750003 -3.1099999 1.68939996 -1.15750003 -3.1099999 1.87940001 -1.20249999 -2.53999996 2.44939995 -1.20249999 -2.53999996 2.44939995 -1.15750003 -3.1099999 1.87940001 -1.15750003 -2.53999996 2.44939995 -1.20249999 -2.3499999 2.44939995 -1.20249999 -2.3499999 2.44939995 -1.15750003 -2.53999996 2.44939995 -1.15750003 -2.3499999 2.44939995 -1.20249999 -3.1099999 1.68939996 -1.20249999 -3.1099999 1.68939996 -1.15750003 -2.3499999 2.44939995 -1.15750003 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_long_760_-3180_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_long_760_-3180_-1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_long_760_-3180_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_long_760_-3180_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_cross_760_-3180_-1180_1" name="upper_corner_brace_cross_760_-3180_-1180" >
+      <mesh>
+        <source id="upper_corner_brace_cross_760_-3180_-1180_1-positions" name="upper_corner_brace_cross_760_-3180_-1180_1-positions">
+          <float_array id="upper_corner_brace_cross_760_-3180_-1180_1-positions-array" count="72"> -3.2025001 1.68939996 -1.11000001 -3.2025001 1.87940001 -1.11000001 -3.2025001 2.44939995 -0.540000021 -3.2025001 2.44939995 -0.349999994 -3.15750003 2.44939995 -0.349999994 -3.15750003 2.44939995 -0.540000021 -3.15750003 1.87940001 -1.11000001 -3.15750003 1.68939996 -1.11000001 -3.2025001 1.68939996 -1.11000001 -3.2025001 1.87940001 -1.11000001 -3.15750003 1.87940001 -1.11000001 -3.15750003 1.68939996 -1.11000001 -3.2025001 1.87940001 -1.11000001 -3.2025001 2.44939995 -0.540000021 -3.15750003 2.44939995 -0.540000021 -3.15750003 1.87940001 -1.11000001 -3.2025001 2.44939995 -0.540000021 -3.2025001 2.44939995 -0.349999994 -3.15750003 2.44939995 -0.349999994 -3.15750003 2.44939995 -0.540000021 -3.2025001 2.44939995 -0.349999994 -3.2025001 1.68939996 -1.11000001 -3.15750003 1.68939996 -1.11000001 -3.15750003 2.44939995 -0.349999994 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_cross_760_-3180_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_cross_760_-3180_-1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_cross_760_-3180_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_cross_760_-3180_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_long_760_-3180_1180_1" name="upper_corner_brace_long_760_-3180_1180" >
+      <mesh>
+        <source id="upper_corner_brace_long_760_-3180_1180_1-positions" name="upper_corner_brace_long_760_-3180_1180_1-positions">
+          <float_array id="upper_corner_brace_long_760_-3180_1180_1-positions-array" count="72"> -3.1099999 1.70060003 1.15750003 -3.1099999 1.89059997 1.15750003 -2.53999996 2.4605999 1.15750003 -2.3499999 2.4605999 1.15750003 -2.3499999 2.4605999 1.20249999 -2.53999996 2.4605999 1.20249999 -3.1099999 1.89059997 1.20249999 -3.1099999 1.70060003 1.20249999 -3.1099999 1.70060003 1.15750003 -3.1099999 1.89059997 1.15750003 -3.1099999 1.89059997 1.20249999 -3.1099999 1.70060003 1.20249999 -3.1099999 1.89059997 1.15750003 -2.53999996 2.4605999 1.15750003 -2.53999996 2.4605999 1.20249999 -3.1099999 1.89059997 1.20249999 -2.53999996 2.4605999 1.15750003 -2.3499999 2.4605999 1.15750003 -2.3499999 2.4605999 1.20249999 -2.53999996 2.4605999 1.20249999 -2.3499999 2.4605999 1.15750003 -3.1099999 1.70060003 1.15750003 -3.1099999 1.70060003 1.20249999 -2.3499999 2.4605999 1.20249999 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_long_760_-3180_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_long_760_-3180_1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_long_760_-3180_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_long_760_-3180_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_cross_760_-3180_1180_1" name="upper_corner_brace_cross_760_-3180_1180" >
+      <mesh>
+        <source id="upper_corner_brace_cross_760_-3180_1180_1-positions" name="upper_corner_brace_cross_760_-3180_1180_1-positions">
+          <float_array id="upper_corner_brace_cross_760_-3180_1180_1-positions-array" count="72"> -3.2025001 1.70060003 1.11000001 -3.2025001 1.89059997 1.11000001 -3.2025001 2.4605999 0.540000021 -3.2025001 2.4605999 0.349999994 -3.15750003 2.4605999 0.349999994 -3.15750003 2.4605999 0.540000021 -3.15750003 1.89059997 1.11000001 -3.15750003 1.70060003 1.11000001 -3.2025001 1.70060003 1.11000001 -3.2025001 1.89059997 1.11000001 -3.15750003 1.89059997 1.11000001 -3.15750003 1.70060003 1.11000001 -3.2025001 1.89059997 1.11000001 -3.2025001 2.4605999 0.540000021 -3.15750003 2.4605999 0.540000021 -3.15750003 1.89059997 1.11000001 -3.2025001 2.4605999 0.540000021 -3.2025001 2.4605999 0.349999994 -3.15750003 2.4605999 0.349999994 -3.15750003 2.4605999 0.540000021 -3.2025001 2.4605999 0.349999994 -3.2025001 1.70060003 1.11000001 -3.15750003 1.70060003 1.11000001 -3.15750003 2.4605999 0.349999994 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_cross_760_-3180_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_cross_760_-3180_1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_cross_760_-3180_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_cross_760_-3180_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_long_760_2004_-1180_1" name="upper_corner_brace_long_760_2004_-1180" >
+      <mesh>
+        <source id="upper_corner_brace_long_760_2004_-1180_1-positions" name="upper_corner_brace_long_760_2004_-1180_1-positions">
+          <float_array id="upper_corner_brace_long_760_2004_-1180_1-positions-array" count="72"> 1.93400002 1.68939996 -1.20249999 1.93400002 1.87940001 -1.20249999 1.36399996 2.44939995 -1.20249999 1.17400002 2.44939995 -1.20249999 1.17400002 2.44939995 -1.15750003 1.36399996 2.44939995 -1.15750003 1.93400002 1.87940001 -1.15750003 1.93400002 1.68939996 -1.15750003 1.93400002 1.68939996 -1.20249999 1.93400002 1.87940001 -1.20249999 1.93400002 1.87940001 -1.15750003 1.93400002 1.68939996 -1.15750003 1.93400002 1.87940001 -1.20249999 1.36399996 2.44939995 -1.20249999 1.36399996 2.44939995 -1.15750003 1.93400002 1.87940001 -1.15750003 1.36399996 2.44939995 -1.20249999 1.17400002 2.44939995 -1.20249999 1.17400002 2.44939995 -1.15750003 1.36399996 2.44939995 -1.15750003 1.17400002 2.44939995 -1.20249999 1.93400002 1.68939996 -1.20249999 1.93400002 1.68939996 -1.15750003 1.17400002 2.44939995 -1.15750003 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_long_760_2004_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_long_760_2004_-1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_long_760_2004_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_long_760_2004_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_cross_760_2004_-1180_1" name="upper_corner_brace_cross_760_2004_-1180" >
+      <mesh>
+        <source id="upper_corner_brace_cross_760_2004_-1180_1-positions" name="upper_corner_brace_cross_760_2004_-1180_1-positions">
+          <float_array id="upper_corner_brace_cross_760_2004_-1180_1-positions-array" count="72"> 1.98150003 1.68939996 -1.11000001 1.98150003 1.87940001 -1.11000001 1.98150003 2.44939995 -0.540000021 1.98150003 2.44939995 -0.349999994 2.02649999 2.44939995 -0.349999994 2.02649999 2.44939995 -0.540000021 2.02649999 1.87940001 -1.11000001 2.02649999 1.68939996 -1.11000001 1.98150003 1.68939996 -1.11000001 1.98150003 1.87940001 -1.11000001 2.02649999 1.87940001 -1.11000001 2.02649999 1.68939996 -1.11000001 1.98150003 1.87940001 -1.11000001 1.98150003 2.44939995 -0.540000021 2.02649999 2.44939995 -0.540000021 2.02649999 1.87940001 -1.11000001 1.98150003 2.44939995 -0.540000021 1.98150003 2.44939995 -0.349999994 2.02649999 2.44939995 -0.349999994 2.02649999 2.44939995 -0.540000021 1.98150003 2.44939995 -0.349999994 1.98150003 1.68939996 -1.11000001 2.02649999 1.68939996 -1.11000001 2.02649999 2.44939995 -0.349999994 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_cross_760_2004_-1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_cross_760_2004_-1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_cross_760_2004_-1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_cross_760_2004_-1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_long_760_2004_1180_1" name="upper_corner_brace_long_760_2004_1180" >
+      <mesh>
+        <source id="upper_corner_brace_long_760_2004_1180_1-positions" name="upper_corner_brace_long_760_2004_1180_1-positions">
+          <float_array id="upper_corner_brace_long_760_2004_1180_1-positions-array" count="72"> 1.93400002 1.70060003 1.15750003 1.93400002 1.89059997 1.15750003 1.36399996 2.4605999 1.15750003 1.17400002 2.4605999 1.15750003 1.17400002 2.4605999 1.20249999 1.36399996 2.4605999 1.20249999 1.93400002 1.89059997 1.20249999 1.93400002 1.70060003 1.20249999 1.93400002 1.70060003 1.15750003 1.93400002 1.89059997 1.15750003 1.93400002 1.89059997 1.20249999 1.93400002 1.70060003 1.20249999 1.93400002 1.89059997 1.15750003 1.36399996 2.4605999 1.15750003 1.36399996 2.4605999 1.20249999 1.93400002 1.89059997 1.20249999 1.36399996 2.4605999 1.15750003 1.17400002 2.4605999 1.15750003 1.17400002 2.4605999 1.20249999 1.36399996 2.4605999 1.20249999 1.17400002 2.4605999 1.15750003 1.93400002 1.70060003 1.15750003 1.93400002 1.70060003 1.20249999 1.17400002 2.4605999 1.20249999 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_long_760_2004_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_long_760_2004_1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_long_760_2004_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_long_760_2004_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="upper_corner_brace_cross_760_2004_1180_1" name="upper_corner_brace_cross_760_2004_1180" >
+      <mesh>
+        <source id="upper_corner_brace_cross_760_2004_1180_1-positions" name="upper_corner_brace_cross_760_2004_1180_1-positions">
+          <float_array id="upper_corner_brace_cross_760_2004_1180_1-positions-array" count="72"> 1.98150003 1.70060003 1.11000001 1.98150003 1.89059997 1.11000001 1.98150003 2.4605999 0.540000021 1.98150003 2.4605999 0.349999994 2.02649999 2.4605999 0.349999994 2.02649999 2.4605999 0.540000021 2.02649999 1.89059997 1.11000001 2.02649999 1.70060003 1.11000001 1.98150003 1.70060003 1.11000001 1.98150003 1.89059997 1.11000001 2.02649999 1.89059997 1.11000001 2.02649999 1.70060003 1.11000001 1.98150003 1.89059997 1.11000001 1.98150003 2.4605999 0.540000021 2.02649999 2.4605999 0.540000021 2.02649999 1.89059997 1.11000001 1.98150003 2.4605999 0.540000021 1.98150003 2.4605999 0.349999994 2.02649999 2.4605999 0.349999994 2.02649999 2.4605999 0.540000021 1.98150003 2.4605999 0.349999994 1.98150003 1.70060003 1.11000001 2.02649999 1.70060003 1.11000001 2.02649999 2.4605999 0.349999994 </float_array>
+          <technique_common>
+            <accessor count="24" offset="0" source="#upper_corner_brace_cross_760_2004_1180_1-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="upper_corner_brace_cross_760_2004_1180_1-vertices">
+          <input semantic="POSITION" source="#upper_corner_brace_cross_760_2004_1180_1-positions" />
+        </vertices>
+        <polylist count="6" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#upper_corner_brace_cross_760_2004_1180_1-vertices" />
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="pergola_final_model.obj" name="pergola_final_model.obj">
+      <node id="concrete_slab_2500x6500" name="concrete_slab_2500x6500" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#concrete_slab_2500x6500_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#concrete_slab">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="terrace_deck_surface" name="terrace_deck_surface" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#terrace_deck_surface_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#terrace_deck">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_-3180_-1180" name="glulam_post_140x140_-3180_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_-3180_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_-3180_-1180" name="metal_post_base_-3180_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_-3180_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_-3180_1180" name="glulam_post_140x140_-3180_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_-3180_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_-3180_1180" name="metal_post_base_-3180_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_-3180_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_-588_-1180" name="glulam_post_140x140_-588_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_-588_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_-588_-1180" name="metal_post_base_-588_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_-588_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_-588_1180" name="glulam_post_140x140_-588_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_-588_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_-588_1180" name="metal_post_base_-588_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_-588_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_2004_-1180" name="glulam_post_140x140_2004_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_2004_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_2004_-1180" name="metal_post_base_2004_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_2004_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="glulam_post_140x140_2004_1180" name="glulam_post_140x140_2004_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#glulam_post_140x140_2004_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="metal_post_base_2004_1180" name="metal_post_base_2004_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#metal_post_base_2004_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#galvanized_metal">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="double_long_beam_outer_-1180" name="double_long_beam_outer_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#double_long_beam_outer_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="double_long_beam_outer_1180" name="double_long_beam_outer_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#double_long_beam_outer_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_1" name="rafter_45x145_1" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_1_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_2" name="rafter_45x145_2" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_2_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_3" name="rafter_45x145_3" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_3_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_4" name="rafter_45x145_4" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_4_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_5" name="rafter_45x145_5" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_5_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_6" name="rafter_45x145_6" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_6_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_7" name="rafter_45x145_7" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_7_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_8" name="rafter_45x145_8" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_8_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_9" name="rafter_45x145_9" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_9_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="rafter_45x145_10" name="rafter_45x145_10" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#rafter_45x145_10_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="clear_polycarbonate_roof" name="clear_polycarbonate_roof" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#clear_polycarbonate_roof_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#clear_polycarbonate">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_1" name="long_privacy_slat_1" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_1_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_2" name="long_privacy_slat_2" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_2_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_3" name="long_privacy_slat_3" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_3_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_4" name="long_privacy_slat_4" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_4_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_5" name="long_privacy_slat_5" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_5_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_6" name="long_privacy_slat_6" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_6_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_7" name="long_privacy_slat_7" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_7_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_8" name="long_privacy_slat_8" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_8_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_9" name="long_privacy_slat_9" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_9_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_10" name="long_privacy_slat_10" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_10_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_11" name="long_privacy_slat_11" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_11_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_12" name="long_privacy_slat_12" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_12_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_13" name="long_privacy_slat_13" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_13_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="long_privacy_slat_14" name="long_privacy_slat_14" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#long_privacy_slat_14_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_1" name="short_privacy_slat_1" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_1_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_2" name="short_privacy_slat_2" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_2_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_3" name="short_privacy_slat_3" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_3_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_4" name="short_privacy_slat_4" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_4_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_5" name="short_privacy_slat_5" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_5_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_6" name="short_privacy_slat_6" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_6_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_7" name="short_privacy_slat_7" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_7_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_8" name="short_privacy_slat_8" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_8_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_9" name="short_privacy_slat_9" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_9_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_10" name="short_privacy_slat_10" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_10_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_11" name="short_privacy_slat_11" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_11_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_12" name="short_privacy_slat_12" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_12_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_13" name="short_privacy_slat_13" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_13_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="short_privacy_slat_14" name="short_privacy_slat_14" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#short_privacy_slat_14_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_long_760_-3180_-1180" name="upper_corner_brace_long_760_-3180_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_long_760_-3180_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_cross_760_-3180_-1180" name="upper_corner_brace_cross_760_-3180_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_cross_760_-3180_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_long_760_-3180_1180" name="upper_corner_brace_long_760_-3180_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_long_760_-3180_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_cross_760_-3180_1180" name="upper_corner_brace_cross_760_-3180_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_cross_760_-3180_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_long_760_2004_-1180" name="upper_corner_brace_long_760_2004_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_long_760_2004_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_cross_760_2004_-1180" name="upper_corner_brace_cross_760_2004_-1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_cross_760_2004_-1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_long_760_2004_1180" name="upper_corner_brace_long_760_2004_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_long_760_2004_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="upper_corner_brace_cross_760_2004_1180" name="upper_corner_brace_cross_760_2004_1180" type="NODE">
+        <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#upper_corner_brace_cross_760_2004_1180_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="defaultMaterial" target="#warm_wood">
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#pergola_final_model.obj" />
+  </scene>
+</COLLADA>
