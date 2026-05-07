@@ -399,6 +399,7 @@ renderer.domElement.addEventListener("wheel", (event) => {
 
 let lastTouchAngle = null;
 let lastTouchDistance = null;
+let lastSingleTouch = null;
 
 function touchMetrics(event) {
   const a = event.touches[0];
@@ -417,6 +418,15 @@ renderer.domElement.addEventListener("touchstart", (event) => {
     const metrics = touchMetrics(event);
     lastTouchAngle = metrics.angle;
     lastTouchDistance = metrics.distance;
+    lastSingleTouch = null;
+  } else if (event.touches.length === 1) {
+    event.preventDefault();
+    lastSingleTouch = {
+      x: event.touches[0].clientX,
+      y: event.touches[0].clientY,
+    };
+    lastTouchAngle = null;
+    lastTouchDistance = null;
   }
 }, { passive: false });
 
@@ -429,6 +439,17 @@ renderer.domElement.addEventListener("touchmove", (event) => {
     moveCamera(deltaAngle, 0, zoomFactor);
     lastTouchAngle = metrics.angle;
     lastTouchDistance = metrics.distance;
+    lastSingleTouch = null;
+  } else if (event.touches.length === 1 && lastSingleTouch !== null) {
+    event.preventDefault();
+    const touch = event.touches[0];
+    const dx = touch.clientX - lastSingleTouch.x;
+    const dy = touch.clientY - lastSingleTouch.y;
+    moveCamera(dx * 0.006, dy * 0.006);
+    lastSingleTouch = {
+      x: touch.clientX,
+      y: touch.clientY,
+    };
   }
 }, { passive: false });
 
@@ -436,6 +457,14 @@ renderer.domElement.addEventListener("touchend", (event) => {
   if (event.touches.length < 2) {
     lastTouchAngle = null;
     lastTouchDistance = null;
+  }
+  if (event.touches.length === 1) {
+    lastSingleTouch = {
+      x: event.touches[0].clientX,
+      y: event.touches[0].clientY,
+    };
+  } else if (event.touches.length === 0) {
+    lastSingleTouch = null;
   }
 }, { passive: false });
 
