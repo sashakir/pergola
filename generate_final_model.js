@@ -445,7 +445,7 @@ renderer.domElement.addEventListener("touchmove", (event) => {
     const touch = event.touches[0];
     const dx = touch.clientX - lastSingleTouch.x;
     const dy = touch.clientY - lastSingleTouch.y;
-    moveCamera(dx * 0.006, dy * 0.006);
+    moveCamera(-dx * 0.006, -dy * 0.006);
     lastSingleTouch = {
       x: touch.clientX,
       y: touch.clientY,
