@@ -302,6 +302,8 @@ function writeMtl() {
 }
 
 function writeHtml() {
+  const buildTaskMarkdown = fs.readFileSync("pergola_build_task.md", "utf8");
+  const escapedBuildTask = JSON.stringify(buildTaskMarkdown);
   const html = `<!doctype html>
 <html lang="ru">
 <head>
@@ -310,6 +312,14 @@ function writeHtml() {
   <title>Финальная пергола 6 стоек - балки 6 м</title>
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; font-family: Arial, sans-serif; background: #f6f3ec; }
+    #docButton { position: fixed; right: 14px; top: 14px; z-index: 10; border: 1px solid rgba(0,0,0,.18); border-radius: 8px; background: rgba(255,255,255,.9); color: #263238; font: 14px Arial, sans-serif; padding: 10px 12px; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+    #docButton:active { transform: translateY(1px); }
+    #docPanel { display: none; position: fixed; inset: 12px; z-index: 20; background: rgba(255,255,255,.96); border: 1px solid rgba(0,0,0,.18); border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,.22); overflow: hidden; }
+    #docPanel.open { display: flex; flex-direction: column; }
+    #docHeader { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #ddd; background: #fff; }
+    #docHeader strong { font-size: 15px; color: #263238; }
+    #docClose { border: 1px solid rgba(0,0,0,.18); border-radius: 7px; background: #fff; color: #263238; font: 18px Arial, sans-serif; width: 34px; height: 34px; line-height: 1; }
+    #docContent { overflow: auto; padding: 14px 16px 22px; color: #263238; font: 14px/1.45 Arial, sans-serif; white-space: pre-wrap; }
     #error { display: none; position: fixed; left: 16px; bottom: 16px; right: 16px; background: #fff3f0; border: 1px solid #c45a44; color: #5a1f14; padding: 12px 14px; border-radius: 8px; font-size: 14px; }
   </style>
   <script type="importmap">
@@ -322,10 +332,33 @@ function writeHtml() {
   </script>
 </head>
 <body>
+<button id="docButton" type="button">Описание</button>
+<div id="docPanel" aria-hidden="true">
+  <div id="docHeader">
+    <strong>Задание и материалы</strong>
+    <button id="docClose" type="button" aria-label="Закрыть">×</button>
+  </div>
+  <div id="docContent"></div>
+</div>
 <div id="error"></div>
 <script type="module">
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+const buildTaskMarkdown = ${escapedBuildTask};
+const docButton = document.getElementById("docButton");
+const docPanel = document.getElementById("docPanel");
+const docClose = document.getElementById("docClose");
+const docContent = document.getElementById("docContent");
+docContent.textContent = buildTaskMarkdown;
+docButton.addEventListener("click", () => {
+  docPanel.classList.add("open");
+  docPanel.setAttribute("aria-hidden", "false");
+});
+docClose.addEventListener("click", () => {
+  docPanel.classList.remove("open");
+  docPanel.setAttribute("aria-hidden", "true");
+});
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf6f3ec);
@@ -675,6 +708,7 @@ window.addEventListener("unhandledrejection", (event) => {
 </body>
 </html>`;
   fs.writeFileSync("pergola_final_6posts_6m.html", html);
+  fs.writeFileSync("index.html", html);
 }
 
 addSceneGeometry();
