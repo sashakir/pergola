@@ -398,7 +398,7 @@ renderer.domElement.addEventListener("touchmove", (event) => {
     const metrics = touchMetrics(event);
     const deltaAngle = metrics.angle - lastTouchAngle;
     const zoomFactor = lastTouchDistance / Math.max(20, metrics.distance);
-    moveCamera(-deltaAngle, 0, zoomFactor);
+    moveCamera(deltaAngle, 0, zoomFactor);
     lastTouchAngle = metrics.angle;
     lastTouchDistance = metrics.distance;
   }
