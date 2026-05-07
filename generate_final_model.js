@@ -302,8 +302,6 @@ function writeMtl() {
 }
 
 function writeHtml() {
-  const buildTaskMarkdown = fs.readFileSync("pergola_build_task.md", "utf8");
-  const escapedBuildTask = JSON.stringify(buildTaskMarkdown);
   const html = `<!doctype html>
 <html lang="ru">
 <head>
@@ -319,7 +317,7 @@ function writeHtml() {
     #docHeader { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #ddd; background: #fff; }
     #docHeader strong { font-size: 15px; color: #263238; }
     #docClose { border: 1px solid rgba(0,0,0,.18); border-radius: 7px; background: #fff; color: #263238; font: 18px Arial, sans-serif; width: 34px; height: 34px; line-height: 1; }
-    #docContent { overflow: auto; padding: 14px 16px 22px; color: #263238; font: 14px/1.45 Arial, sans-serif; white-space: pre-wrap; }
+    #docFrame { flex: 1; width: 100%; border: 0; background: #fff; }
     #error { display: none; position: fixed; left: 16px; bottom: 16px; right: 16px; background: #fff3f0; border: 1px solid #c45a44; color: #5a1f14; padding: 12px 14px; border-radius: 8px; font-size: 14px; }
   </style>
   <script type="importmap">
@@ -338,19 +336,16 @@ function writeHtml() {
     <strong>Задание и материалы</strong>
     <button id="docClose" type="button" aria-label="Закрыть">×</button>
   </div>
-  <div id="docContent"></div>
+  <iframe id="docFrame" src="pergola_build_task.html" title="Задание и материалы"></iframe>
 </div>
 <div id="error"></div>
 <script type="module">
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-const buildTaskMarkdown = ${escapedBuildTask};
 const docButton = document.getElementById("docButton");
 const docPanel = document.getElementById("docPanel");
 const docClose = document.getElementById("docClose");
-const docContent = document.getElementById("docContent");
-docContent.textContent = buildTaskMarkdown;
 docButton.addEventListener("click", () => {
   docPanel.classList.add("open");
   docPanel.setAttribute("aria-hidden", "false");
