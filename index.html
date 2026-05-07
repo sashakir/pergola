@@ -50,22 +50,71 @@ controls.mouseButtons.LEFT = THREE.MOUSE.PAN;
 controls.mouseButtons.MIDDLE = THREE.MOUSE.DOLLY;
 controls.mouseButtons.RIGHT = THREE.MOUSE.PAN;
 controls.update();
+renderer.domElement.style.touchAction = "none";
 
-renderer.domElement.addEventListener("wheel", (event) => {
-  event.preventDefault();
+function moveCamera(deltaTheta, deltaPhi, zoomFactor = 1) {
   const target = controls.target;
   const offset = camera.position.clone().sub(target);
   const spherical = new THREE.Spherical().setFromVector3(offset);
-  if (event.ctrlKey) {
-    spherical.radius *= Math.exp(event.deltaY * 0.0015);
-  } else {
-    spherical.theta += event.deltaX * 0.006;
-    spherical.phi += event.deltaY * 0.006;
-    spherical.phi = Math.max(0.18, Math.min(Math.PI - 0.18, spherical.phi));
-  }
+  spherical.theta += deltaTheta;
+  spherical.phi += deltaPhi;
+  spherical.radius *= zoomFactor;
+  spherical.phi = Math.max(0.18, Math.min(Math.PI - 0.18, spherical.phi));
+  spherical.radius = Math.max(1.8, Math.min(18, spherical.radius));
   camera.position.copy(target).add(new THREE.Vector3().setFromSpherical(spherical));
   camera.lookAt(target);
   controls.update();
+}
+
+renderer.domElement.addEventListener("wheel", (event) => {
+  event.preventDefault();
+  if (event.ctrlKey) {
+    moveCamera(0, 0, Math.exp(event.deltaY * 0.0015));
+  } else {
+    moveCamera(event.deltaX * 0.006, event.deltaY * 0.006);
+  }
+}, { passive: false });
+
+let lastTouchAngle = null;
+let lastTouchDistance = null;
+
+function touchMetrics(event) {
+  const a = event.touches[0];
+  const b = event.touches[1];
+  const dx = b.clientX - a.clientX;
+  const dy = b.clientY - a.clientY;
+  return {
+    angle: Math.atan2(dy, dx),
+    distance: Math.hypot(dx, dy),
+  };
+}
+
+renderer.domElement.addEventListener("touchstart", (event) => {
+  if (event.touches.length === 2) {
+    event.preventDefault();
+    const metrics = touchMetrics(event);
+    lastTouchAngle = metrics.angle;
+    lastTouchDistance = metrics.distance;
+  }
+}, { passive: false });
+
+renderer.domElement.addEventListener("touchmove", (event) => {
+  if (event.touches.length === 2 && lastTouchAngle !== null && lastTouchDistance !== null) {
+    event.preventDefault();
+    const metrics = touchMetrics(event);
+    const deltaAngle = metrics.angle - lastTouchAngle;
+    const zoomFactor = lastTouchDistance / Math.max(20, metrics.distance);
+    moveCamera(-deltaAngle, 0, zoomFactor);
+    lastTouchAngle = metrics.angle;
+    lastTouchDistance = metrics.distance;
+  }
+}, { passive: false });
+
+renderer.domElement.addEventListener("touchend", (event) => {
+  if (event.touches.length < 2) {
+    lastTouchAngle = null;
+    lastTouchDistance = null;
+  }
 }, { passive: false });
 
 scene.add(new THREE.HemisphereLight(0xffffff, 0x8d7f6d, 1.8));
