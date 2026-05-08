@@ -168,10 +168,11 @@ function clipPolygon(poly, inside, intersect) {
 }
 
 function kneeBraceProfile(leg, width) {
+  const cut = width * Math.SQRT2;
   return [
     [0, -leg],
-    [0, -leg + width],
-    [leg - width, 0],
+    [0, -leg + cut],
+    [leg - cut, 0],
     [leg, 0],
   ];
 }
@@ -528,10 +529,11 @@ function clipPolygon2(poly, inside, intersect) {
 }
 
 function kneeBraceProfile2(leg, width) {
+  const cut = width * Math.SQRT2;
   return [
     [0, -leg],
-    [0, -leg + width],
-    [leg - width, 0],
+    [0, -leg + cut],
+    [leg - cut, 0],
     [leg, 0],
   ];
 }
