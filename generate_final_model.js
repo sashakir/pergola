@@ -189,7 +189,7 @@ function cleanPolygon(poly) {
   return cleaned;
 }
 
-function addKneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, materialName) {
+function addKneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, materialName, planeCenter = null) {
   const leg = 760;
   const width = 190;
   const thickness = 45;
@@ -199,9 +199,9 @@ function addKneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, materialN
   for (const side of [-thickness / 2, thickness / 2]) {
     for (const [h, v2] of profile) {
       if (plane === "long") {
-        verts.push(v(cornerX + inwardX * (70 + h), beamBottomY + v2, cornerZ + side));
+        verts.push(v(cornerX + inwardX * (70 + h), beamBottomY + v2, (planeCenter ?? cornerZ) + side));
       } else {
-        verts.push(v(cornerX + side, beamBottomY + v2, cornerZ + inwardZ * (70 + h)));
+        verts.push(v((planeCenter ?? cornerX) + side, beamBottomY + v2, cornerZ + inwardZ * (70 + h)));
       }
     }
   }
@@ -281,13 +281,26 @@ function addSceneGeometry() {
     addBox(`short_privacy_slat_${i + 1}`, [-3110, y, 0], [20, 95, 2220], materials.wood.name);
   }
 
-  // Classic 45-degree upper corner braces: two per corner, eight total.
+  // Paired upper corner braces: four per corner, sixteen total.
   for (const x of [-3180, 2004]) {
     for (const z of [-1180, 1180]) {
       const inwardX = x < 0 ? 1 : -1;
       const inwardZ = z < 0 ? 1 : -1;
-      addKneeBrace(`upper_corner_brace_long_760_${x}_${z}`, x, z, inwardX, inwardZ, "long", materials.wood.name);
-      addKneeBrace(`upper_corner_brace_cross_760_${x}_${z}`, x, z, inwardX, inwardZ, "cross", materials.wood.name);
+      const rowSide = z < 0 ? -1 : 1;
+      const longBraceZs = [
+        z + rowSide * (70 + 22.5),
+        z - rowSide * (70 + 22.5),
+      ];
+      const crossBraceXs = [
+        x + inwardX * (70 + 22.5),
+        x - inwardX * (70 + 22.5),
+      ];
+      for (const braceZ of longBraceZs) {
+        addKneeBrace(`upper_corner_brace_long_760_${x}_${z}_${braceZ}`, x, z, inwardX, inwardZ, "long", materials.wood.name, braceZ);
+      }
+      for (const braceX of crossBraceXs) {
+        addKneeBrace(`upper_corner_brace_cross_760_${x}_${z}_${braceX}`, x, z, inwardX, inwardZ, "cross", materials.wood.name, braceX);
+      }
     }
   }
 }
@@ -542,7 +555,7 @@ function cleanPolygon2(poly) {
   return cleaned;
 }
 
-function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat) {
+function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat, planeCenter = null) {
   const leg = 760;
   const width = 190;
   const thickness = 45;
@@ -552,9 +565,9 @@ function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat) {
   for (const side of [-thickness / 2, thickness / 2]) {
     for (const [h, v] of profile) {
       if (plane === "long") {
-        verts.push(new THREE.Vector3((cornerX + inwardX * (70 + h)) / 1000, (beamBottomY + v) / 1000, (cornerZ + side) / 1000));
+        verts.push(new THREE.Vector3((cornerX + inwardX * (70 + h)) / 1000, (beamBottomY + v) / 1000, ((planeCenter ?? cornerZ) + side) / 1000));
       } else {
-        verts.push(new THREE.Vector3((cornerX + side) / 1000, (beamBottomY + v) / 1000, (cornerZ + inwardZ * (70 + h)) / 1000));
+        verts.push(new THREE.Vector3(((planeCenter ?? cornerX) + side) / 1000, (beamBottomY + v) / 1000, (cornerZ + inwardZ * (70 + h)) / 1000));
       }
     }
   }
@@ -709,8 +722,21 @@ for (const x of [-3180, 2004]) {
   for (const z of [-1180, 1180]) {
     const inwardX = x < 0 ? 1 : -1;
     const inwardZ = z < 0 ? 1 : -1;
-    kneeBrace("upper corner brace long 760", x, z, inwardX, inwardZ, "long", matWood);
-    kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood);
+    const rowSide = z < 0 ? -1 : 1;
+    const longBraceZs = [
+      z + rowSide * (70 + 22.5),
+      z - rowSide * (70 + 22.5),
+    ];
+    const crossBraceXs = [
+      x + inwardX * (70 + 22.5),
+      x - inwardX * (70 + 22.5),
+    ];
+    for (const braceZ of longBraceZs) {
+      kneeBrace("upper corner brace long 760", x, z, inwardX, inwardZ, "long", matWood, braceZ);
+    }
+    for (const braceX of crossBraceXs) {
+      kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood, braceX);
+    }
   }
 }
 

@@ -231,7 +231,7 @@ function cleanPolygon2(poly) {
   return cleaned;
 }
 
-function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat) {
+function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat, planeCenter = null) {
   const leg = 760;
   const width = 190;
   const thickness = 45;
@@ -241,9 +241,9 @@ function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat) {
   for (const side of [-thickness / 2, thickness / 2]) {
     for (const [h, v] of profile) {
       if (plane === "long") {
-        verts.push(new THREE.Vector3((cornerX + inwardX * (70 + h)) / 1000, (beamBottomY + v) / 1000, (cornerZ + side) / 1000));
+        verts.push(new THREE.Vector3((cornerX + inwardX * (70 + h)) / 1000, (beamBottomY + v) / 1000, ((planeCenter ?? cornerZ) + side) / 1000));
       } else {
-        verts.push(new THREE.Vector3((cornerX + side) / 1000, (beamBottomY + v) / 1000, (cornerZ + inwardZ * (70 + h)) / 1000));
+        verts.push(new THREE.Vector3(((planeCenter ?? cornerX) + side) / 1000, (beamBottomY + v) / 1000, (cornerZ + inwardZ * (70 + h)) / 1000));
       }
     }
   }
@@ -398,8 +398,21 @@ for (const x of [-3180, 2004]) {
   for (const z of [-1180, 1180]) {
     const inwardX = x < 0 ? 1 : -1;
     const inwardZ = z < 0 ? 1 : -1;
-    kneeBrace("upper corner brace long 760", x, z, inwardX, inwardZ, "long", matWood);
-    kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood);
+    const rowSide = z < 0 ? -1 : 1;
+    const longBraceZs = [
+      z + rowSide * (70 + 22.5),
+      z - rowSide * (70 + 22.5),
+    ];
+    const crossBraceXs = [
+      x + inwardX * (70 + 22.5),
+      x - inwardX * (70 + 22.5),
+    ];
+    for (const braceZ of longBraceZs) {
+      kneeBrace("upper corner brace long 760", x, z, inwardX, inwardZ, "long", matWood, braceZ);
+    }
+    for (const braceX of crossBraceXs) {
+      kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood, braceX);
+    }
   }
 }
 
