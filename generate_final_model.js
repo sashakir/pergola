@@ -254,7 +254,7 @@ function addSceneGeometry() {
   const rafterXs = [
     roofCenterX - roofLength / 2,
     leftInnerRafterX,
-    ...Array.from({ length: 6 }, (_, i) => leftInnerRafterX + (i + 1) * ((rightInnerRafterX - leftInnerRafterX) / 7)),
+    ...Array.from({ length: 8 }, (_, i) => leftInnerRafterX + (i + 1) * ((rightInnerRafterX - leftInnerRafterX) / 9)),
     rightInnerRafterX,
     roofCenterX + roofLength / 2,
   ];
@@ -696,7 +696,7 @@ const rightInnerRafterX = 2004 - 70 - 22.5;
 const rafterXs = [
   roofCenterX - roofLength / 2,
   leftInnerRafterX,
-  ...Array.from({ length: 6 }, (_, i) => leftInnerRafterX + (i + 1) * ((rightInnerRafterX - leftInnerRafterX) / 7)),
+  ...Array.from({ length: 8 }, (_, i) => leftInnerRafterX + (i + 1) * ((rightInnerRafterX - leftInnerRafterX) / 9)),
   rightInnerRafterX,
   roofCenterX + roofLength / 2,
 ];
