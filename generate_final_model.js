@@ -16,8 +16,9 @@ let vertexCount = 0;
 
 const roofLength = 6000;
 const roofCenterX = -588;
-const rafterBottomLength = (6000 - 3 * 145) / 2;
-const rafterTopLength = rafterBottomLength + 145 * 2;
+const rafterCutOffset = 250;
+const rafterBottomLength = (6000 - 3 * rafterCutOffset) / 2;
+const rafterTopLength = rafterBottomLength + rafterCutOffset * 2;
 
 function v(x, y, z) {
   return [x * mm, y * mm, z * mm];

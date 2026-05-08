@@ -177,8 +177,8 @@ const matMetal = new THREE.MeshStandardMaterial({ color: 0x8c9193, roughness: 0.
 const matPoly = new THREE.MeshPhysicalMaterial({ color: 0xbdeeff, transparent: true, opacity: 0.35, roughness: 0.08, transmission: 0.25 });
 const roofLength = 6000;
 const roofCenterX = -588;
-const rafterTopLength = 3072.5;
-const rafterBottomLength = 2782.5;
+const rafterTopLength = 3125;
+const rafterBottomLength = 2625;
 
 function box(name, x, y, z, sx, sy, sz, mat, rotX = 0) {
   const g = new THREE.BoxGeometry(sx / 1000, sy / 1000, sz / 1000);
