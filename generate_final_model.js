@@ -193,7 +193,7 @@ function cleanPolygon(poly) {
 
 function addKneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, materialName, planeCenter = null) {
   const leg = 760;
-  const width = 190;
+  const width = 145;
   const thickness = 45;
   const beamBottomY = yAtZ(cornerZ) - 145 + (cornerZ > 0 ? 200 : 0);
   const profile = kneeBraceProfile(leg, width);
@@ -554,7 +554,7 @@ function cleanPolygon2(poly) {
 
 function kneeBrace(name, cornerX, cornerZ, inwardX, inwardZ, plane, mat, planeCenter = null) {
   const leg = 760;
-  const width = 190;
+  const width = 145;
   const thickness = 45;
   const beamBottomY = yAtZ(cornerZ) - 145 + (cornerZ > 0 ? 200 : 0);
   const profile = kneeBraceProfile2(leg, width);
