@@ -281,7 +281,7 @@ function addSceneGeometry() {
     addBox(`short_privacy_slat_${i + 1}`, [-3110, y, 0], [20, 95, 2220], materials.wood.name);
   }
 
-  // Paired upper corner braces: four per corner, sixteen total.
+  // Upper corner braces: two along paired long beams and one across the short side per corner.
   for (const x of [-3180, 2004]) {
     for (const z of [-1180, 1180]) {
       const inwardX = x < 0 ? 1 : -1;
@@ -291,16 +291,10 @@ function addSceneGeometry() {
         z + rowSide * (70 + 22.5),
         z - rowSide * (70 + 22.5),
       ];
-      const crossBraceXs = [
-        x + inwardX * (70 + 22.5),
-        x - inwardX * (70 + 22.5),
-      ];
       for (const braceZ of longBraceZs) {
         addKneeBrace(`upper_corner_brace_long_760_${x}_${z}_${braceZ}`, x, z, inwardX, inwardZ, "long", materials.wood.name, braceZ);
       }
-      for (const braceX of crossBraceXs) {
-        addKneeBrace(`upper_corner_brace_cross_760_${x}_${z}_${braceX}`, x, z, inwardX, inwardZ, "cross", materials.wood.name, braceX);
-      }
+      addKneeBrace(`upper_corner_brace_cross_760_${x}_${z}`, x, z, inwardX, inwardZ, "cross", materials.wood.name);
     }
   }
 }
@@ -727,16 +721,10 @@ for (const x of [-3180, 2004]) {
       z + rowSide * (70 + 22.5),
       z - rowSide * (70 + 22.5),
     ];
-    const crossBraceXs = [
-      x + inwardX * (70 + 22.5),
-      x - inwardX * (70 + 22.5),
-    ];
     for (const braceZ of longBraceZs) {
       kneeBrace("upper corner brace long 760", x, z, inwardX, inwardZ, "long", matWood, braceZ);
     }
-    for (const braceX of crossBraceXs) {
-      kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood, braceX);
-    }
+    kneeBrace("upper corner brace cross 760", x, z, inwardX, inwardZ, "cross", matWood);
   }
 }
 
