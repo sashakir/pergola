@@ -234,9 +234,16 @@ function addSceneGeometry() {
     }
   }
 
-  // Long side beams, following the roof slope.
+  // Paired long side beams sandwich each row of posts from inside and outside.
   for (const z of zs) {
-    addBox(`double_long_beam_outer_${z}`, [roofCenterX, yAtZ(z) - 72, z], [roofLength, 145, 45], materials.wood.name);
+    const rowSide = z < 0 ? -1 : 1;
+    const beamCentersZ = [
+      z + rowSide * (70 + 22.5),
+      z - rowSide * (70 + 22.5),
+    ];
+    for (const beamZ of beamCentersZ) {
+      addBox(`paired_long_beam_${z}_${beamZ}`, [roofCenterX, yAtZ(z) - 72, beamZ], [roofLength, 145, 45], materials.wood.name);
+    }
   }
 
   // Rafters across width, sloped to the closed long wall.
@@ -666,7 +673,14 @@ for (const x of xs) for (const z of zs) {
 }
 
 for (const z of zs) {
-  box("long beam outer", roofCenterX, yAtZ(z) - 72, z, roofLength, 145, 45, matWood);
+  const rowSide = z < 0 ? -1 : 1;
+  const beamCentersZ = [
+    z + rowSide * (70 + 22.5),
+    z - rowSide * (70 + 22.5),
+  ];
+  for (const beamZ of beamCentersZ) {
+    box("paired long beam", roofCenterX, yAtZ(z) - 72, beamZ, roofLength, 145, 45, matWood);
+  }
 }
 
 const roofAngle = Math.atan2(200, rafterTopLength);
